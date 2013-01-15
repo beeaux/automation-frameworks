@@ -30,6 +30,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\..\lib\Selenium WebDriver\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentAssertions">
+      <HintPath>..\..\lib\Fluent Assertions\FluentAssertions.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\lib\NUnit\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.2.12296, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.mocks, Version=2.6.2.12296, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\NUnit\nunit.mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks">
+      <HintPath>..\..\lib\NUnit\Rhino.Mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Selenium.WebDriverBackedSelenium">
+      <HintPath>..\..\lib\Selenium WebDriver\Selenium.WebDriverBackedSelenium.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -37,6 +60,21 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Xml" />
+    <Reference Include="TechTalk.SpecFlow">
+      <HintPath>..\..\lib\SpecFlow\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="TechTalk.SpecFlow.Reporting">
+      <HintPath>..\..\lib\SpecFlow\TechTalk.SpecFlow.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="ThoughtWorks.Selenium.Core">
+      <HintPath>..\..\lib\Selenium WebDriver\ThoughtWorks.Selenium.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\..\lib\Selenium WebDriver\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\..\lib\Selenium WebDriver\WebDriver.Support.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Support\SharedDriver.cs" />
@@ -47,10 +85,14 @@
     <Compile Include="Support\Utilities\HttpWatchPerfMonitor.cs" />
     <Compile Include="Support\Utilities\ScenarioInformation.cs" />
     <Compile Include="Support\Utilities\UtilityHelpers.cs" />
+    <Compile Include="Support\WebDriverCustomMethods.cs" />
+    <Compile Include="Support\WebDriverExtensions.cs" />
+    <Compile Include="Support\WebDriverStepsBase.cs" />
     <Compile Include="Support\WebDriverSupport.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Features\" />
+    <Folder Include="Browsers\Chrome\chromedriver_linux64\" />
+    <Folder Include="Browsers\Chrome\chromedriver_linux\" />
     <Folder Include="Pages\" />
     <Folder Include="StepDefinitions\" />
   </ItemGroup>
@@ -76,6 +118,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Browsers\Chrome\chromedriver_mac\chromedriver" />
+    <None Include="Features\GoogleMail.feature" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Browsers\Chrome\chromedriver_win\chromedriver.exe" />
+    <Content Include="Browsers\IE\IEDriverServer_Win32\IEDriverServer.exe" />
+    <Content Include="Browsers\IE\IEDriverServer_x64\IEDriverServer.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
