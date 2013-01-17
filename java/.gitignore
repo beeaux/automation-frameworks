@@ -1,0 +1,19 @@
+# IDE working files
+.idea/
+.iml
+
+# Build directories
+distrib/
+target/
+tmp/
+
+# Build & test droppings
+report.js
+report.xml
+*.log
+
+# OS generated files
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db

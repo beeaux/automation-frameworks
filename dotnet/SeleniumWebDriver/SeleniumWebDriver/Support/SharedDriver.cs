@@ -55,18 +55,23 @@ namespace SeleniumWebDriver
             }
             else if("ie".Equals(_browser) || "internet explorer".Equals(_browser)) 
             {
-                if(!_platform.StartsWith("m") && !_platform.StartsWith("u") && !_platform.StartsWith("l"))
+                if (!_platform.StartsWith("m") && !_platform.StartsWith("u") && !_platform.StartsWith("l"))
                 {
-                    if("true".Equals(_osVersion)) 
+                    if ("true".Equals(_osVersion))
                     {
                         _ieDir = _ieDir + "_x64";
                     }
-                    else 
+                    else
                     {
                         _ieDir = _ieDir + "_Win32";
                     }
                     SetWebDriverToIE();
                 }
+                else
+                {
+                    Console.WriteLine("Selected browser {" + _browser + "} is not supported on " + _platform);
+                }
+
             }
             else {
                 SetWebDriverToFirefox();
