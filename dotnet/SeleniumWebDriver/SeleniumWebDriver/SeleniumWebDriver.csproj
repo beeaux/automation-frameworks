@@ -77,6 +77,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\Homepage.cs" />
+    <Compile Include="Pages\Users\SignIn.cs" />
+    <Compile Include="StepDefinitions\HomepageStepDef.cs" />
+    <Compile Include="StepDefinitions\Users\SignInStepDef.cs" />
     <Compile Include="Support\SharedDriver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Support\Utilities\AppConfiguration.cs" />
@@ -93,8 +97,6 @@
   <ItemGroup>
     <Folder Include="Browsers\Chrome\chromedriver_linux64\" />
     <Folder Include="Browsers\Chrome\chromedriver_linux\" />
-    <Folder Include="Pages\" />
-    <Folder Include="StepDefinitions\" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="HttpWatch">

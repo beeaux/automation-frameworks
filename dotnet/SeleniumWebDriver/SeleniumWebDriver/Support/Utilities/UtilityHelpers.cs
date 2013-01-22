@@ -63,7 +63,7 @@ namespace SeleniumWebDriver.Support.Utilities
             if(captureScreenshot == null) return;
 
             var screenshot = captureScreenshot.GetScreenshot();
-            var screenCaptureFilename = Path.Combine(GetScreenCaptureDirectory(), ScenarioInformation.ScenarioTitle + ".png");
+            var screenCaptureFilename = Path.Combine(GetScreenCaptureDirectory(), FormatString(ScenarioInformation.ScenarioTitle, "titleCase").Replace(" ", "_") + ".png");
             screenshot.SaveAsFile(screenCaptureFilename, ImageFormat.Png);
     }
 }

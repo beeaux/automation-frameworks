@@ -53,7 +53,7 @@ namespace SeleniumWebDriver.Support
         /// <summary>
         ///     Action Handlers
         /// </summary>
-        public static void NavigateTo(this RemoteWebDriver driver, string url)
+        public static void NavigateTo(this IWebDriver driver, string url)
         {
             driver.Navigate().GoToUrl(url);
         }
