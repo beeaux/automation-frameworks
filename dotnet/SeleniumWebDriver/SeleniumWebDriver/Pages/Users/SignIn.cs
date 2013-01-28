@@ -14,7 +14,7 @@ namespace SeleniumWebDriver.Pages.Users
         [FindsBy(Using = "", How = How.CssSelector)] public IWebElement signInButton;
 
         public SignIn(IWebDriver driver) {
-            CustomAssertions.BrowserTitleShouldContain("");
+            AssertionHandlers.BrowserTitleShouldContain("");
 
             this._driver = (SharedDriver)driver;
         }

@@ -14,7 +14,7 @@ namespace SeleniumWebDriver.Pages
         public Homepage(IWebDriver driver)
         {
             WebDriverCustomMethods.NavigateTo(driver, EnvironmentConfiguration.GetEnvironment());
-            CustomAssertions.BrowserTitleShouldContain("");
+            AssertionHandlers.BrowserTitleShouldContain("");
 
             this._driver = (SharedDriver)driver;
         }

@@ -94,7 +94,7 @@ namespace SeleniumWebDriver.Support
             if (wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector(locator))) != null) return;
 
             var errMsg = "Element: {" + locator + "} is not visible or loaded on " + CurrentPage().Url;
-            CustomAssertions.ThrowShouldBeAssignableToException(@errMsg);
+            AssertionHandlers.ThrowShouldBeAssignableToException(@errMsg);
         }
 
         public static void WaitForAlertElement(this IWebElement element)
@@ -103,7 +103,7 @@ namespace SeleniumWebDriver.Support
             if (!IsElementDisplayed(@alert).Equals(false)) return;
 
             var errMsg = "Expected popup alert failed to display on " + CurrentPage().Url;
-            CustomAssertions.ThrowShouldBeAssignableToException(@errMsg);
+            AssertionHandlers.ThrowShouldBeAssignableToException(@errMsg);
         }
 
         public static bool IsElementDisplayed(this IWebElement element)

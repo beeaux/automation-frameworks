@@ -15,7 +15,7 @@ namespace SeleniumWebDriver.Support.Utilities
 
         public static string GetTestResultsDirectory()
         {
-            if(!Directory.Exists(AppConfiguration.TestResultsDirectory))
+            if (!Directory.Exists(AppConfiguration.TestResultsDirectory))
                 Directory.CreateDirectory(AppConfiguration.TestResultsDirectory);
 
             var resultsDirectory = Path.Combine(AppConfiguration.TestResultsDirectory, _date, _time);
@@ -58,12 +58,14 @@ namespace SeleniumWebDriver.Support.Utilities
             return reportFilePath;
         }
 
-        public static void EmbedScreenCapture(this IWebDriver driver) {
+        public static void EmbedScreenCapture(this IWebDriver driver)
+        {
             var captureScreenshot = driver as ITakesScreenshot;
-            if(captureScreenshot == null) return;
+            if (captureScreenshot == null) return;
 
             var screenshot = captureScreenshot.GetScreenshot();
             var screenCaptureFilename = Path.Combine(GetScreenCaptureDirectory(), FormatString(ScenarioInformation.ScenarioTitle, "titleCase").Replace(" ", "_") + ".png");
             screenshot.SaveAsFile(screenCaptureFilename, ImageFormat.Png);
+        }
     }
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>SpecFlow.Assist.Dynamic</id>
+    <version>0.3.3</version>
+    <title>SpecFlow.Assist.Dynamic</title>
+    <authors>www.marcusoft.net - Marcus Hammarberg</authors>
+    <owners>www.marcusoft.net - Marcus Hammarberg</owners>
+    <projectUrl>http://marcusoftnet.github.com/SpecFlow.Assist.Dynamic/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Adds support for dynamic instances and set from SpecFlow tables</description>
+    <copyright>Copyright © Marcus Hammarberg  2012</copyright>
+    <dependencies>
+      <dependency id="ImpromptuInterface" version="5.6.2" />
+      <dependency id="SpecFlow" />
+    </dependencies>
+    <references>
+      <reference file="ImpromptuInterface.dll" />
+      <reference file="SpecFlow.Assist.Dynamic.dll" />
+      <reference file="TechTalk.SpecFlow.dll" />
+    </references>
+  </metadata>
+</package>

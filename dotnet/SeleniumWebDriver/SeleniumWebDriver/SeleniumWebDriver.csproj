@@ -84,9 +84,9 @@
     <Compile Include="Support\SharedDriver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Support\Utilities\AppConfiguration.cs" />
-    <Compile Include="Support\Utilities\CustomAssertions.cs" />
+    <Compile Include="Support\Utilities\AssertionHandlers.cs" />
     <Compile Include="Support\Utilities\EnvironmentConfiguration.cs" />
-    <Compile Include="Support\Utilities\HttpWatchPerfMonitor.cs" />
+    <Compile Include="Support\Utilities\WebPerformanceHandler.cs" />
     <Compile Include="Support\Utilities\ScenarioInformation.cs" />
     <Compile Include="Support\Utilities\UtilityHelpers.cs" />
     <Compile Include="Support\WebDriverCustomMethods.cs" />

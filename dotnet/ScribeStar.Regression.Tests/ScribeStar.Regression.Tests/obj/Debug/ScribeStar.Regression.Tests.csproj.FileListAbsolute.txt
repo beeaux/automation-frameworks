@@ -1,0 +1,4 @@
+C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\dotnet\ScribeStar.Regression.Tests\ScribeStar.Regression.Tests\obj\Debug\ScribeStar.Regression.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\dotnet\ScribeStar.Regression.Tests\ScribeStar.Regression.Tests\obj\Debug\Interop.HttpWatch.dll
+C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\dotnet\ScribeStar.Regression.Tests\ScribeStar.Regression.Tests\obj\Debug\Interop.SHDocVw.dll
+C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\dotnet\ScribeStar.Regression.Tests\ScribeStar.Regression.Tests\obj\Debug\ScribeStar.Regression.Tests.csproj.ResolveComReference.cache

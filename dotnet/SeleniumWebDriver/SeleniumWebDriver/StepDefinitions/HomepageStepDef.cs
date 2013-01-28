@@ -18,7 +18,7 @@ namespace SeleniumWebDriver.StepDefinitions
             PageFactory.InitElements(driver, this);
         }
 
-        [Given("^I (?go to|am on) the homepage$")]
+        [Given("^I (?:go to|am on) the homepage$")]
         public void IGoToOrAmOnTheHomepage()
         {
         }
