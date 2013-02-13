@@ -18,26 +18,26 @@ namespace SeleniumWebDriver.Support
         }
 
         [Before]
-        public void BeforeWebSession()
+        public static void BeforeWebSession()
         {
             SharedDriver.DriverInstance.SetUp();
         }
 
         [AfterTestRun]
-        public void AfterWebSession()
+        public static void AfterWebSession()
         {
             SharedDriver.DriverInstance.TearDown();
         }
 
         [AfterScenario]
-        public void AfterWebScenario()
+        public static void AfterWebScenario()
         {
             if (!ReuseWebSession)
                 SharedDriver.DriverInstance.TearDown();
         }
 
         [AfterScenario]
-        public void LogFailedScenarios()
+        public static void LogFailedScenarios()
         {
             var err = ScenarioInformation.FailedTests;
             if (err != null)
@@ -47,7 +47,7 @@ namespace SeleniumWebDriver.Support
         }
 
         [AfterFeature]
-        public void DeleteCookiesAfterWebFeature()
+        public static void DeleteCookiesAfterWebFeature()
         {
             SharedDriver.DriverInstance.DeleteAllCookies();
         }

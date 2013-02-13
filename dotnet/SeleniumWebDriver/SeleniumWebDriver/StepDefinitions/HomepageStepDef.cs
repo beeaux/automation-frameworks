@@ -1,7 +1,8 @@
-﻿using OpenQA.Selenium;
+﻿using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.PageObjects;
 using SeleniumWebDriver.Pages;
 using SeleniumWebDriver.Support;
+using SeleniumWebDriver.Support.Utilities;
 using TechTalk.SpecFlow;
 
 namespace SeleniumWebDriver.StepDefinitions
@@ -9,18 +10,19 @@ namespace SeleniumWebDriver.StepDefinitions
     [Binding]
     public class HomepageStepDef
     {
-        private SharedDriver _driver;
-        private Homepage homepage;
+        private RemoteWebDriver WebDriver = SharedDriver.DriverInstance.WebDriver;
+        private readonly Homepage _homepage = new Homepage();
 
-        public HomepageStepDef(IWebDriver driver)
+        public HomepageStepDef()
         {
-            driver = (IWebDriver)_driver;
-            PageFactory.InitElements(driver, this);
+            PageFactory.InitElements(WebDriver, _homepage);
         }
 
         [Given("^I (?:go to|am on) the homepage$")]
-        public void IGoToOrAmOnTheHomepage()
+        public void GoToOrAmOnTheHomepage()
         {
+            _homepage.NavigateToHomepage();
+            AssertionHandlers.BrowserTitleShouldContain("");
         }
     }
 }

@@ -70,6 +70,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\Homepage.cs" />
+    <Compile Include="StepDefs\HomepageStepDef.cs" />
     <Compile Include="Support\SharedDriver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Core\AppConfiguration.cs" />
@@ -85,14 +87,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Browsers\Chrome\chromedriver_mac\chromedriver" />
     <None Include="Features\SpecFlowFeature1.feature" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Browsers\Chrome\" />
-    <Folder Include="Browsers\IE\" />
-    <Folder Include="Pages\" />
-    <Folder Include="StepDefs\" />
+    <Folder Include="Browsers\Chrome\chromedriver_linux64\" />
+    <Folder Include="Browsers\Chrome\chromedriver_linux\" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="HttpWatch">
@@ -113,6 +114,11 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Browsers\Chrome\chromedriver_win\chromedriver.exe" />
+    <Content Include="Browsers\IE\IEDriverServer_Win32\IEDriverServer.exe" />
+    <Content Include="Browsers\IE\IEDriverServer_x64\IEDriverServer.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
