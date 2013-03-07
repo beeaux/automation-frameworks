@@ -23,9 +23,10 @@ public class PlugNEditStepdefs {
     private SharedDriver Driver;
     private PlugNEdit page;
 
+    // constructor
     public PlugNEditStepdefs(SharedDriver driver) {
         this.Driver = driver;
-        page = PageFactory.initElements(driver, PlugNEdit.class);
+        page = PageFactory.initElements(driver, PlugNEdit.class);   // binds driver instance with page object class.
     }
 
     @Then("^the text tab is hidden$")
@@ -39,6 +40,10 @@ public class PlugNEditStepdefs {
         // matcher to determine which menu to click based on user's input
         Collection<WebElement> menus = findElementsByCssSelector("#NoEditupper9WordPressshowhideit img");
         for(WebElement menu : menus) {
+            /*
+                finds image element with the collection with 'alt' attribute matching user input,
+                then performs the expected action.
+             */
             if(menu.getAttribute("alt").contains(label)) {
                 clickOn(menu);
             }
@@ -53,6 +58,10 @@ public class PlugNEditStepdefs {
 
     @Given("^I am on the homepage$")
     public void I_am_on_the_homepage() {
+        /*
+            code added to switch driver onto iframe, as the functionalities are within the embedded iframe.
+            iframe id is set 0, which is the first and only iframe on the page.
+         */
         switchToFrame(0);
     }
 
@@ -96,6 +105,9 @@ public class PlugNEditStepdefs {
         Collection<WebElement> elements = findElementsByCssSelector("#RightMouseClickOptionNoEdit div");
 
         for (WebElement element : elements) {
+            /*
+                finds element with the collection with 'text' value matching user input, then performs the expected action.
+             */
             if(element.getText().contains(menu)) {
                 clickOn(element);
             }

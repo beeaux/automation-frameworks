@@ -1,5 +1,6 @@
 package wgsn.examples.java.automation.tests;
 
+import cucumber.annotation.After;
 import cucumber.annotation.Before;
 import cucumber.runtime.ScenarioResult;
 import org.openqa.selenium.OutputType;
@@ -144,8 +145,8 @@ public class SharedDriver extends EventFiringWebDriver {
     // constructor
     public SharedDriver() {
         super(WEBDRIVER);
-        manage().window().maximize();
-        manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        manage().window().maximize();   // maximize browser window
+        manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);   // sets implicit wait time to 10s
     }
 
     @Override
@@ -155,6 +156,9 @@ public class SharedDriver extends EventFiringWebDriver {
         }
     }
 
+    /*
+        deletes all cookies before execution
+     */
     @Before
     public void deleteAllCookies() {
         manage().deleteAllCookies();
@@ -162,8 +166,9 @@ public class SharedDriver extends EventFiringWebDriver {
 
     /*
         Embeds screenshot on exception or failure.
+        current support issue with Chrome.
      */
-    //@Before
+    @After
     public void registerWebDriverEventListener(final ScenarioResult scenario) {
         register(new AbstractWebDriverEventListener() {
             @Override
