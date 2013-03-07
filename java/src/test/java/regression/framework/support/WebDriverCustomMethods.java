@@ -10,13 +10,12 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import regression.framework.SharedDriver;
 
-import java.util.Collection;
 import java.util.List;
 
 public class WebDriverCustomMethods {
     private final SharedDriver _SD;
     private static RemoteWebDriver driver;
-    private static WebDriverWait wait = new WebDriverWait(currentPage(), 10);;
+    private static WebDriverWait wait = new WebDriverWait(currentPage(), 10);
 
     public WebDriverCustomMethods(WebDriver driver) {
         _SD = (SharedDriver) driver;
