@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
+  <TopNode>[0-1002]C:\Dev\scribestar\Scribestar.ET.Regression\Scribestar.ET.Regression\bin\Debug\Scribestar.ET.Regression.dll</TopNode>
+  <SelectedNode>[0-1001]Scribestar.ET.Regression.Features.Instance.LoginFeature.AddTwoNumbers</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1002]C:\Dev\scribestar\Scribestar.ET.Regression\Scribestar.ET.Regression\bin\Debug\Scribestar.ET.Regression.dll" Expanded="true" />
+    <Node UniqueName="[0-1003]Scribestar" Expanded="true" />
+    <Node UniqueName="[0-1004]Scribestar.ET" Expanded="true" />
+    <Node UniqueName="[0-1005]Scribestar.ET.Regression" Expanded="true" />
+    <Node UniqueName="[0-1006]Scribestar.ET.Regression.Features" Expanded="true" />
+    <Node UniqueName="[0-1007]Scribestar.ET.Regression.Features.Instance" Expanded="true" />
+    <Node UniqueName="[0-1000]Scribestar.ET.Regression.Features.Instance.LoginFeature" Expanded="true" />
+  </Nodes>
+</VisualState>

@@ -1,0 +1,83 @@
+[0.007][INFO]:      ChromeDriver 23.0.1240.0 C:\Dev\scribestar\Scribestar.ET.Regression\Scribestar.ET.Regression\Browsers\Chrome\chromedriver_win\chromedriver.exe
+[2.688][FINE]:      Initializing session with capabilities {
+   "acceptSslCerts": true,
+   "browserName": "chrome",
+   "chrome.switches": [  ],
+   "chromeOptions": {
+      "args": [  ],
+      "binary": "",
+      "extensions": [  ]
+   },
+   "cssSelectorsEnabled": true,
+   "javascriptEnabled": true,
+   "platform": "WINDOWS",
+   "version": ""
+}
+
+[2.690][INFO]:      Launching chrome: "C:\Users\Yomi Folami\AppData\Local\Google\Chrome\Application\chrome.exe" --enable-logging --log-level=1 --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --ignore-certificate-errors about:blank
+[5.804][INFO]:      Connected to Chrome successfully. Version: 25.0.1364.152
+[6.328][FINE]:      Command received (/session/0ce0fc1f6f55dabef94d61564562b382)
+[6.329][FINE]:      Command finished (/session/0ce0fc1f6f55dabef94d61564562b382) with response {
+   "sessionId": "0ce0fc1f6f55dabef94d61564562b382",
+   "status": 0,
+   "value": {
+      "acceptSslCerts": false,
+      "applicationCacheEnabled": false,
+      "browserConnectionEnabled": false,
+      "browserName": "chrome",
+      "chrome.chromedriverVersion": "23.0.1240.0",
+      "chrome.nativeEvents": false,
+      "cssSelectorsEnabled": true,
+      "databaseEnabled": false,
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "locationContextEnabled": false,
+      "nativeEvents": true,
+      "platform": "windows",
+      "rotatable": false,
+      "takesScreenshot": true,
+      "version": "25.0.1364.152",
+      "webStorageEnabled": true
+   }
+}
+
+[6.723][FINE]:      Command received (/session/0ce0fc1f6f55dabef94d61564562b382/window/current/maximize)
+[6.723][FINER]:     Waiting for all views to stop loading...
+[6.724][FINER]:     Done waiting for all views to stop loading
+[6.742][FINER]:     Waiting for all views to stop loading...
+[6.747][FINER]:     Done waiting for all views to stop loading
+[6.748][FINE]:      Command finished (/session/0ce0fc1f6f55dabef94d61564562b382/window/current/maximize) with response {
+   "sessionId": "0ce0fc1f6f55dabef94d61564562b382",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[6.765][FINE]:      Command received (/session/0ce0fc1f6f55dabef94d61564562b382/timeouts/implicit_wait) with params {
+   "ms": 5000.0
+}
+
+[6.766][FINER]:     Waiting for all views to stop loading...
+[6.766][FINER]:     Done waiting for all views to stop loading
+[6.766][FINER]:     Waiting for all views to stop loading...
+[6.775][FINER]:     Done waiting for all views to stop loading
+[6.776][FINE]:      Command finished (/session/0ce0fc1f6f55dabef94d61564562b382/timeouts/implicit_wait) with response {
+   "sessionId": "0ce0fc1f6f55dabef94d61564562b382",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[7.781][FINE]:      Command received (/session/0ce0fc1f6f55dabef94d61564562b382/screenshot)
+[7.781][FINER]:     Waiting for all views to stop loading...
+[7.782][FINER]:     Done waiting for all views to stop loading
+[8.636][FINER]:     Waiting for all views to stop loading...
+[8.637][FINER]:     Done waiting for all views to stop loading
+[8.637][FINE]:      Command finished (/session/0ce0fc1f6f55dabef94d61564562b382/screenshot) with response {
+   "sessionId": "0ce0fc1f6f55dabef94d61564562b382",
+   "status": 0,
+   "value": "iVBORw0KGgoAAAANSUhEUgAABVYAAAKbCAIAAACRikahAAAQZ0lEQVR4nO3YwQ3AIBDAsNL9dz62AInYE+SdNTMfAAAA8Lr/d..."
+}
+
