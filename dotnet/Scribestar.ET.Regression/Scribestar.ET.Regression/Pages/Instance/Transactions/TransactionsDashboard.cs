@@ -78,5 +78,6 @@ namespace Scribestar.ET.Regression.Pages.Instance.Transactions
 
             var previewHeadingTitle = WebDriverExtensions.FindWebElementByCssSelector("#userTransactionsContainer .properties-header-small h2");
             previewHeadingTitle.ShouldContain("Transaction Properties");
+        }
     }
 }
