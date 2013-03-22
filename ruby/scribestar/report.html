@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns ="http://www.w3.org/1999/xhtml"><head><meta content="text/html;charset=utf-8"/><title>Cucumber</title><style type="text/css">/* cucumber.css is generated from cucumber.sass */
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns ="http://www.w3.org/1999/xhtml"><head><meta content="text/html;charset=utf-8" http-equiv="Content-Type"/><title>Cucumber</title><style type="text/css">/* cucumber.css is generated from cucumber.sass */
 /* Regenerate with rake sass */
 body {
   font-size: 0px;
@@ -439,24 +439,24 @@ f.top,left:d.left-f.left}},offsetParent:function(){return this.map(function(){fo
 e&&e.document?e.document.compatMode==="CSS1Compat"&&e.document.documentElement["client"+b]||e.document.body["client"+b]:e.nodeType===9?Math.max(e.documentElement["client"+b],e.body["scroll"+b],e.documentElement["scroll"+b],e.body["offset"+b],e.documentElement["offset"+b]):f===w?c.css(e,d):this.css(d,typeof f==="string"?f:f+"px")}});A.jQuery=A.$=c})(window);
 
   SCENARIOS = "h3[id^='scenario_'],h3[id^=background_]";
-  
+
   $(document).ready(function() {
     $(SCENARIOS).css('cursor', 'pointer');
     $(SCENARIOS).click(function() {
       $(this).siblings().toggle(250);
     });
-    
+
     $("#collapser").css('cursor', 'pointer');
     $("#collapser").click(function() {
       $(SCENARIOS).siblings().hide();
     });
-    
+
     $("#expander").css('cursor', 'pointer');
     $("#expander").click(function() {
       $(SCENARIOS).siblings().show();
     });
   })
-  
+
   function moveProgressBar(percentDone) {
     $("cucumber-header").css('width', percentDone +"%");
   }
@@ -468,5 +468,5 @@ e&&e.document?e.document.compatMode==="CSS1Compat"&&e.document.documentElement["
     $('#'+element_id).css('background', '#FAF834');
     $('#'+element_id).css('color', '#000000');
   }
-  
-</script></head><body><!-- Step count 0--><div class="cucumber"><div id="cucumber-header"><div id="label"><h1>Cucumber Features</h1></div><div id="summary"><p id="totals"></p><p id="duration"></p><div id="expand-collapse"><p id="expander">Expand All</p><p id="collapser">Collapse All</p></div></div></div><script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0m0.000s seconds</strong>";</script><script type="text/javascript">document.getElementById('totals').innerHTML = "";</script></div></body></html>
+
+</script></head><body><!-- Step count 2--><div class="cucumber"><div id="cucumber-header"><div id="label"><h1>Cucumber Features</h1></div><div id="summary"><p id="totals"></p><p id="duration"></p><div id="expand-collapse"><p id="expander">Expand All</p><p id="collapser">Collapse All</p></div></div></div><div class="feature"><h2><span class="val">Feature: Go to ScribeStar homepage</span></h2><p class="narrative">As a User<br/>I want to navigate to the homepage<br/>So that I can access my account<br/></p><div class='scenario'><span class="tag">@support</span><span class="scenario_file">features\scribestar_homepage.feature:7</span><h3 id="scenario_1"><span class="keyword">Scenario:</span> <span class="val">ScribeStar Admin goes to support homepage</span></h3><ol><li id='features\scribestar_homepage_feature_8' class='step passed'><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the <span class="param">support</span> homepage</span></div><div class="step_file"><span>features/step_definitions/ss_support/homepage.rb:1</span></div></li> <script type="text/javascript">moveProgressBar('50.0');</script></ol></div><div class='scenario'><span class="tag">@instance</span><span class="scenario_file">features\scribestar_homepage.feature:11</span><h3 id="scenario_2"><span class="keyword">Scenario:</span> <span class="val">ScribeStar User goes to instance homepage</span></h3><ol><li id='features\scribestar_homepage_feature_12' class='step passed'><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the <span class="param">instance</span> homepage</span></div><div class="step_file"><span>features/step_definitions/ss_support/homepage.rb:1</span></div></li> <script type="text/javascript">moveProgressBar('100.0');</script></ol></div></div><script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0m42.363s seconds</strong>";</script><script type="text/javascript">document.getElementById('totals').innerHTML = "2 scenarios (2 passed)<br />2 steps (2 passed)";</script></div></body></html>
