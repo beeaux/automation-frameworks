@@ -1,0 +1,62 @@
+[0.007][INFO]:      ChromeDriver 23.0.1240.0 C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\ruby\scribestar\features\support\drivers\chrome\chromedriver_win\chromedriver.exe
+[1.021][FINE]:      Initializing session with capabilities {
+   "browserName": "chrome",
+   "chrome.detach": true,
+   "chromeOptions": {
+      "detach": true
+   },
+   "cssSelectorsEnabled": true,
+   "javascriptEnabled": true,
+   "nativeEvents": false,
+   "platform": "ANY",
+   "rotatable": false,
+   "takesScreenshot": false,
+   "version": ""
+}
+
+[1.027][INFO]:      Using named testing interface
+[4.662][INFO]:      Connected to Chrome successfully. Version: 25.0.1364.172
+[4.690][FINE]:      Command received (/session/e9784a54b558b2d2e2d25306098e4f4c)
+[4.690][FINE]:      Command finished (/session/e9784a54b558b2d2e2d25306098e4f4c) with response {
+   "sessionId": "e9784a54b558b2d2e2d25306098e4f4c",
+   "status": 0,
+   "value": {
+      "acceptSslCerts": false,
+      "applicationCacheEnabled": false,
+      "browserConnectionEnabled": false,
+      "browserName": "chrome",
+      "chrome.chromedriverVersion": "23.0.1240.0",
+      "chrome.nativeEvents": false,
+      "cssSelectorsEnabled": true,
+      "databaseEnabled": false,
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "locationContextEnabled": false,
+      "nativeEvents": true,
+      "platform": "windows",
+      "rotatable": false,
+      "takesScreenshot": true,
+      "version": "25.0.1364.172",
+      "webStorageEnabled": true
+   }
+}
+
+[4.706][FINE]:      Command received (/session/e9784a54b558b2d2e2d25306098e4f4c/url) with params {
+   "url": "http://support.sit1.scribestar/"
+}
+
+[4.706][FINER]:     Waiting for all views to stop loading...
+[4.708][FINER]:     Done waiting for all views to stop loading
+[7.218][FINER]:     Waiting for all views to stop loading...
+[7.220][FINER]:     Done waiting for all views to stop loading
+[7.221][FINE]:      Command finished (/session/e9784a54b558b2d2e2d25306098e4f4c/url) with response {
+   "sessionId": "e9784a54b558b2d2e2d25306098e4f4c",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[7.275][FINE]:      Command received (/session/e9784a54b558b2d2e2d25306098e4f4c)
+[17.942][WARNING]:  Chrome still running, terminating...
+[17.942][INFO]:     Chrome shutdown
