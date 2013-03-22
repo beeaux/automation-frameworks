@@ -1,31 +1,24 @@
-# SharedDriver
+require 'capybara'
+require 'cucumber'
+require 'webrat'
+require 'rspec'
+require 'selenium-webdriver'
+require 'capybara/poltergeist'
 
-module SharedDriver
-  # Capybara config
-  Capybara.default_driver = :selenium
-  Capybara.default_selector = :css
-  Capybara.default_wait_time = 5
-  Capybara.app_host = 'http://www.sit1.scribestar/'
+include Capybara::DSL
 
-=begin
-  @Driver = Selenium::WebDriver.for :firefox
-  @capabilities = Selenium::WebDriver::Remote::Capabilities
-  @bridge = Selenium::WebDriver::Remote::Bridge
+# Define Capybara configuration
+Capybara.default_driver = :selenium
+Capybara.default_selector = :css
+Capybara.default_wait_time = 5
 
-  @Driver.manage.window.maximize
-=end
+# SELENIUM_SERVER_JAR file required to run Opera and Selenium Grid
+#export SELENIUM_SERVER_JAR = "/../drivers/selenium-server-standalone.jar"
 
-  Capybara.register_driver :set_driver_to_chrome do |driver|
-    Capybara::Selenium::Driver.new(driver, :browser => :chrome)
+
+After do |scenario|
+  if(scenario.failed?)
+    page.driver.browser.save_screenshot("#{scenario.__id__}.png")
+    embed("#{scenario.__id__}.png", "image/png", "SCREENSHOT")
   end
-
-  Capybara.register_driver :set_driver_to_firefox do |driver|
-    Capybara::Selenium::Driver.new(driver, :browser => :firefox)
-  end
-
-  Capybara.register_driver :set_driver_to_internet_explorer do |driver|
-    Capybara::Selenium::Driver.new(driver, :browser => :internet_explorer)
-  end
-
 end
-World(SharedDriver)

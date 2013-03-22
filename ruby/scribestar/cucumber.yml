@@ -1,2 +1,12 @@
-default: -r features/support/ -r features/step_definitions
+#default: -r features/support/ -r features/step_definitions
+#default: --format html --out report.html --format pretty
+
 default: --format html --out report.html --format pretty
+
+chrome: --format html --out report.html --format pretty -r features/support/profiles/chrome.rb -r features/all_features -r features/step_definitions
+
+firefox: --format html --out report.html --format pretty -r features/support/profiles/firefox.rb -r features/all_features -r features/step_definitions
+
+ie: --format html --out report.html --format pretty -r features/support/profile/ie.rb -r features/all_features -r features/step_definitions
+
+opera: --format html --out report.html --format pretty -r features/support/profile/opera.rb -r features/all_features -r features/step_definitions
