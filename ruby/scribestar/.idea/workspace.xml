@@ -2,14 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afc91e8e-0918-43a7-9210-ea14213f4b24" name="Default" comment="">
+      <change type="MOVED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\ruby\scribestar\features\scribestar_homepage.feature" afterPath="$PROJECT_DIR$/features/all_features/scribestar_homepage.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chromedriver.log" afterPath="$PROJECT_DIR$/chromedriver.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cucumber.yml" afterPath="$PROJECT_DIR$/cucumber.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/profiles/headless.rb" afterPath="$PROJECT_DIR$/features/support/profiles/headless.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/homepage.rb" afterPath="$PROJECT_DIR$/features/step_definitions/homepage.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/profiles/ie.rb" afterPath="$PROJECT_DIR$/features/support/profiles/ie.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/profiles/opera.rb" afterPath="$PROJECT_DIR$/features/support/profiles/opera.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html" afterPath="$PROJECT_DIR$/report.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scribestar.iml" afterPath="$PROJECT_DIR$/.idea/scribestar.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="scribestar.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364150020203" ignored="false" />
+    <file path="/Dummy.txt" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364161188031" ignored="false" />
     <file path="/.gitignore" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1363948406852" ignored="false" />
     <file path="/README.txt" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1363961518022" ignored="false" />
-    <file path="/Gemfile" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1363948343847" ignored="false" />
+    <file path="/Gemfile" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364159741029" ignored="false" />
     <file path="/Rakefile" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1363797658713" ignored="false" />
     <file path="/cucumber.yml" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364062351599" ignored="false" />
     <file path="$USER_HOME$/RubymineProjects/com.wiggle.rspec/features/support/env.rb" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1363796043007" ignored="false" />
@@ -23,9 +34,9 @@
     <file path="/opera.rb" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364059425455" ignored="false" />
     <file path="/chrome.rb" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364050261744" ignored="false" />
     <file path="/firefox.rb" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364059287124" ignored="false" />
-    <file path="/ie.rb" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364050178206" ignored="false" />
+    <file path="/ie.rb" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364160418226" ignored="false" />
     <file path="/feature_runner.thor" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364060371631" ignored="false" />
-    <file path="/headless.rb" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364048978340" ignored="false" />
+    <file path="/headless.rb" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364151585677" ignored="false" />
     <file path="/iphone.rb" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364059476611" ignored="false" />
     <file path="/homepage.rb" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364050087464" ignored="false" />
     <file path="/scribestar_homepage.feature" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1363962448699" ignored="false" />
@@ -50,7 +61,7 @@
       <file leaf-file-name="chrome.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/support/profiles/chrome.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="38" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0">
+            <state line="22" column="3" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -59,7 +70,16 @@
       <file leaf-file-name="feature_runner.thor" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tasks/feature_runner.thor">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="40" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
+            <state line="35" column="6" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cucumber.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cucumber.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="620" selection-end="620" vertical-scroll-proportion="0.63323784">
               <folding />
             </state>
           </provider>
@@ -77,7 +97,7 @@
       <file leaf-file-name="headless.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/support/profiles/headless.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="32" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0">
+            <state line="20" column="24" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -86,7 +106,7 @@
       <file leaf-file-name="ie.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/support/profiles/ie.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="6" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
+            <state line="21" column="0" selection-start="676" selection-end="676" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -95,7 +115,7 @@
       <file leaf-file-name="homepage.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/step_definitions/homepage.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="4" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
+            <state line="4" column="40" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -110,10 +130,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="iphone.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="iphone.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/support/profiles/iphone.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="11" selection-start="138" selection-end="138" vertical-scroll-proportion="0.1878453">
+            <state line="8" column="3" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,16 +142,7 @@
       <file leaf-file-name="opera.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/support/profiles/opera.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="40" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cucumber.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cucumber.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="1" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0">
+            <state line="10" column="11" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -157,20 +168,20 @@
       <list>
         <option value="$PROJECT_DIR$/Rakefile" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/README.txt" />
         <option value="$PROJECT_DIR$/features/scribestar_homepage.feature" />
         <option value="$PROJECT_DIR$/features/step_definitions/ss_support/homepage.rb" />
-        <option value="$PROJECT_DIR$/features/support/profiles/headless.rb" />
         <option value="$PROJECT_DIR$/features/support/env.rb" />
-        <option value="$PROJECT_DIR$/features/step_definitions/homepage.rb" />
-        <option value="$PROJECT_DIR$/features/support/profiles/ie.rb" />
         <option value="$PROJECT_DIR$/features/support/profiles/chrome.rb" />
         <option value="$PROJECT_DIR$/features/support/profiles/firefox.rb" />
         <option value="$PROJECT_DIR$/features/support/profiles/iphone.rb" />
         <option value="$PROJECT_DIR$/tasks/feature_runner.thor" />
         <option value="$PROJECT_DIR$/cucumber.yml" />
         <option value="$PROJECT_DIR$/features/support/profiles/opera.rb" />
+        <option value="$PROJECT_DIR$/features/support/profiles/headless.rb" />
+        <option value="$PROJECT_DIR$/features/step_definitions/homepage.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/features/support/profiles/ie.rb" />
       </list>
     </option>
   </component>
@@ -206,7 +217,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -235,20 +245,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scribestar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scribestar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="features" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -267,12 +263,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="support" />
+              <option name="myItemId" value="all_features" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -287,6 +284,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\ruby\scribestar\features\all_features" />
       <recent name="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\ruby\scribestar\features\step_definitions" />
     </key>
   </component>
@@ -432,7 +430,7 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$PROJECT_DIR$/features" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/features/scribestar_homepage.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\ruby\scribestar\features\all_features\scribestar_homepage.feature" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="'@support'" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features -p chrome" />
@@ -448,8 +446,8 @@
       <method />
     </configuration>
     <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Ruby.feature_runner" />
-      <item index="1" class="java.lang.String" itemvalue="Cucumber.scribestar_homepage" />
+      <item index="0" class="java.lang.String" itemvalue="Cucumber.scribestar_homepage" />
+      <item index="1" class="java.lang.String" itemvalue="Ruby.feature_runner" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -498,19 +496,22 @@
       <created>1364150040178</created>
       <updated>1364150040178</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="few minor tweak">
+      <created>1364150121215</created>
+      <updated>1364150121215</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32131147" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3229508" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20288754" sideWeight="0.67704916" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21048632" sideWeight="0.67704916" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -520,6 +521,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32649574" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32131147" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -563,7 +565,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="few minor tweak" />
+    <option name="LAST_COMMIT_MESSAGE" value="@yomi - amended folder structure for feature files" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -580,6 +582,7 @@
     <MESSAGE value="@yomi, applied the following changes:&#10;1. moved homepage.rb out of ss_support, to become global&#10;2. changed arg1 to env in homepage.rb&#10;3. renamed driver methods and add methods for ie, opera" />
     <MESSAGE value="@yomi - applied the following changes:&#10;1. added drivers for ie, chrome, phantomjs&#10;2. configured chrome, ie and headless profiles&#10;3. chrome profile works fine, ie and phantomjs not working&#10;4." />
     <MESSAGE value="few minor tweak" />
+    <MESSAGE value="@yomi - amended folder structure for feature files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -587,11 +590,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/features/scribestar_homepage.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="51" selection-start="179" selection-end="179" vertical-scroll-proportion="0.18312387" />
-      </provider>
-    </entry>
     <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/selenium-webdriver-2.30.0/lib/selenium/webdriver/phantomjs.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="31" selection-start="148" selection-end="148" vertical-scroll-proportion="0.18312387" />
@@ -619,44 +617,9 @@
         <state line="326" column="45" selection-start="10673" selection-end="10673" vertical-scroll-proportion="0.54578096" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/support/profiles/ie.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="6" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/support/profiles/headless.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="32" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/support/profiles/firefox.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="48" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/support/profiles/chrome.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="38" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cucumber.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="1" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/support/profiles/opera.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="40" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -668,23 +631,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/feature_runner.thor">
+    <entry file="file://$PROJECT_DIR$/features/support/profiles/opera.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="40" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/homepage.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
+        <state line="10" column="11" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/support/profiles/iphone.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="11" selection-start="138" selection-end="138" vertical-scroll-proportion="0.1878453">
+        <state line="8" column="3" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/support/profiles/headless.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="24" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="38" selection-start="188" selection-end="188" vertical-scroll-proportion="0.3041145">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/homepage.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="40" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/support/profiles/ie.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="676" selection-end="676" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/support/profiles/chrome.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="3" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/feature_runner.thor">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="6" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cucumber.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="620" selection-end="620" vertical-scroll-proportion="0.63323784">
           <folding />
         </state>
       </provider>

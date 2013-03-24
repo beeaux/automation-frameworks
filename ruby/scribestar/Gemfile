@@ -8,4 +8,5 @@ gem 'nokogiri'
 gem 'shoulda'
 gem 'webrat'
 gem 'thor'
-gem 'poltergeist'
+gem 'poltergeist'  # headless gem hook
+gem 'launchy'     # screenshot gem

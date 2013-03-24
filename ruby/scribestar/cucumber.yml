@@ -9,6 +9,6 @@ firefox: --format html --out report.html --format pretty -r features/support/pro
 
 ie: --format html --out report.html --format pretty -r features/support/profile/ie.rb -r features/all_features -r features/step_definitions
 
-#opera: --format html --out report.html --format pretty -r features/support/profile/opera.rb -r features/all_features -r features/step_definitions
+opera: --format html --out report.html --format pretty -r features/support/profile/opera.rb -r features/all_features -r features/step_definitions
 
 headless: --format html --out report.html --format pretty -r features/support/profile/headless.rb -r features/all_features -r features/step_definitions

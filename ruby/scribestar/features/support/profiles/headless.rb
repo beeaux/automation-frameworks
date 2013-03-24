@@ -1,7 +1,7 @@
 require File.dirname(__FILE__) + '/../env.rb'
 
 # Register driver to use phantomjs (headless javascript-enabled driver)
-Capybara.register_driver :selenium do |driver|
+Capybara.register_driver :poltergeist do |driver|
   phantomjs_driver_path = @drivers_path + 'phantomjs/phantomjs_'
 
   if @host_platform.linux?
@@ -17,7 +17,8 @@ Capybara.register_driver :selenium do |driver|
   end
 
   options = {
-      :browser => :phantomjs
+      :browser => :phantomjs,
+      :inspector => true
   }
-  Capybara::Selenium::Driver.new(driver, options)
+  Capybara::Poltergeist::Driver.new(driver, options)
 end
