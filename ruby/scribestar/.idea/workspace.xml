@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afc91e8e-0918-43a7-9210-ea14213f4b24" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/profiles/chrome.rb" afterPath="$PROJECT_DIR$/features/support/profiles/chrome.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chromedriver.log" afterPath="$PROJECT_DIR$/chromedriver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cucumber.yml" afterPath="$PROJECT_DIR$/cucumber.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/env.rb" afterPath="$PROJECT_DIR$/features/support/env.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/feature_runner.thor" afterPath="$PROJECT_DIR$/tasks/feature_runner.thor" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/profiles/firefox.rb" afterPath="$PROJECT_DIR$/features/support/profiles/firefox.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/profiles/headless.rb" afterPath="$PROJECT_DIR$/features/support/profiles/headless.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/profiles/ie.rb" afterPath="$PROJECT_DIR$/features/support/profiles/ie.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/profiles/iphone.rb" afterPath="$PROJECT_DIR$/features/support/profiles/iphone.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/profiles/opera.rb" afterPath="$PROJECT_DIR$/features/support/profiles/opera.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html" afterPath="$PROJECT_DIR$/report.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="scribestar.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364149840557" ignored="false" />
+    <file path="/Dummy.txt" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364150020203" ignored="false" />
     <file path="/.gitignore" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1363948406852" ignored="false" />
     <file path="/README.txt" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1363961518022" ignored="false" />
     <file path="/Gemfile" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1363948343847" ignored="false" />
@@ -505,13 +494,18 @@
       <created>1363994995242</created>
       <updated>1363994995242</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="few minor tweak">
+      <created>1364150040178</created>
+      <updated>1364150040178</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32131147" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3229508" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -526,7 +520,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32649574" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32131147" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -570,7 +563,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="@yomi - applied the following changes:&#10;1. added drivers for ie, chrome, phantomjs&#10;2. configured chrome, ie and headless profiles&#10;3. chrome profile works fine, ie and phantomjs not working&#10;4." />
+    <option name="LAST_COMMIT_MESSAGE" value="few minor tweak" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -586,6 +579,7 @@
     <MESSAGE value="@yomi - refactored josh's initial scribestar automation suite as follows:&#10;1. added profile files for ie, opera, phantomjs and iphone&#10;2. updated README.txt will more info&#10;3. added sample step_def and feature" />
     <MESSAGE value="@yomi, applied the following changes:&#10;1. moved homepage.rb out of ss_support, to become global&#10;2. changed arg1 to env in homepage.rb&#10;3. renamed driver methods and add methods for ie, opera" />
     <MESSAGE value="@yomi - applied the following changes:&#10;1. added drivers for ie, chrome, phantomjs&#10;2. configured chrome, ie and headless profiles&#10;3. chrome profile works fine, ie and phantomjs not working&#10;4." />
+    <MESSAGE value="few minor tweak" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
