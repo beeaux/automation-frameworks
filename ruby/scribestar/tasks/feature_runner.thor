@@ -33,6 +33,7 @@ class FeatureRunner < Thor
         end
         thread_pool << t
 
+=begin
         t = Thread.new do |n|
           invoke :set_driver_to_headless
         end
@@ -47,6 +48,7 @@ class FeatureRunner < Thor
           invoke :set_driver_to_opera
         end
         thread_pool << t
+=end
 
 
         thread_pool.each {|th| th.join}
@@ -55,7 +57,7 @@ class FeatureRunner < Thor
       feature_run = lambda {
         invoke "feature_runner:set_driver_to_firefox", options
         invoke "feature_runner:set_driver_to_chrome", options
-        invoke "feature_runner:set_driver_to_ie", options
+        #invoke "feature_runner:set_driver_to_ie", options
       }
     end
 

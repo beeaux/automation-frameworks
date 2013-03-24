@@ -10,6 +10,7 @@ include Capybara::DSL
 # Define Capybara configuration
 Capybara.default_driver = :selenium
 Capybara.default_wait_time = 5
+Capybara.run_server = true #Whether start server when testing
 
 @drivers_path = File.dirname(__FILE__) + '/drivers/'        # set global drivers path
 @host_platform = Selenium::WebDriver::Platform              # get host operating system

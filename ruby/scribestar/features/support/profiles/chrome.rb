@@ -4,7 +4,7 @@ require File.dirname(__FILE__) + "/../env.rb"
 Capybara.register_driver :selenium do |driver|
   chrome_driver_path = @drivers_path + 'chrome/chromedriver_'
 
-  if @host_platform.linux? # host_os.unix?
+  if @host_platform.linux?
     if @host_platform.bitsize == 64
       Selenium::WebDriver::Chrome.driver_path = chrome_driver_path + 'linux64/chromedriver'
     else

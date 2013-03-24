@@ -4,16 +4,16 @@ require File.dirname(__FILE__) + '/../env.rb'
 Capybara.register_driver :selenium do |driver|
   phantomjs_driver_path = @drivers_path + 'phantomjs/phantomjs_'
 
-  if @host_platform.linux? #|| host_os.unix?
+  if @host_platform.linux?
     if @host_platform.bitsize == 64
-      Selenium::WebDriver::PhantomJS.driver_path = phantomjs_driver_path + 'linux64/phantomjs'
+      Selenium::WebDriver::Firefox.driver_path = phantomjs_driver_path + 'linux64/phantomjs'
     else
-      Selenium::WebDriver::PhantomJS.driver_path = phantomjs_driver_path + 'linux32/phantomjs'
+      Selenium::WebDriver::Firefox.driver_path = phantomjs_driver_path + 'linux32/phantomjs'
     end
   elsif @host_platform.mac?
-    Selenium::WebDriver::PhantomJS.driver_path = phantomjs_driver_path + 'mac/phantomjs'
+    Selenium::WebDriver::Firefox.driver_path = phantomjs_driver_path + 'mac/phantomjs'
   else
-    Selenium::WebDriver::PhantomJS.driver_path = phantomjs_driver_path + 'win/phantomjs.exe'
+    Selenium::WebDriver::Firefox.driver_path = phantomjs_driver_path + 'win/phantomjs.exe'
   end
 
   options = {

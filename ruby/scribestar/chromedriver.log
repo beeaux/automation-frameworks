@@ -1,5 +1,5 @@
-[0.007][INFO]:      ChromeDriver 23.0.1240.0 C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\ruby\scribestar\features\support\drivers\chrome\chromedriver_win\chromedriver.exe
-[1.021][FINE]:      Initializing session with capabilities {
+[0.008][INFO]:      ChromeDriver 23.0.1240.0 C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\ruby\scribestar\features\support\drivers\chrome\chromedriver_win\chromedriver.exe
+[0.747][FINE]:      Initializing session with capabilities {
    "browserName": "chrome",
    "chrome.detach": true,
    "chromeOptions": {
@@ -14,11 +14,11 @@
    "version": ""
 }
 
-[1.027][INFO]:      Using named testing interface
-[4.662][INFO]:      Connected to Chrome successfully. Version: 25.0.1364.172
-[4.690][FINE]:      Command received (/session/e9784a54b558b2d2e2d25306098e4f4c)
-[4.690][FINE]:      Command finished (/session/e9784a54b558b2d2e2d25306098e4f4c) with response {
-   "sessionId": "e9784a54b558b2d2e2d25306098e4f4c",
+[0.750][INFO]:      Using named testing interface
+[4.417][INFO]:      Connected to Chrome successfully. Version: 25.0.1364.172
+[4.454][FINE]:      Command received (/session/6337919192f37f44351da1c85258ff95)
+[4.460][FINE]:      Command finished (/session/6337919192f37f44351da1c85258ff95) with response {
+   "sessionId": "6337919192f37f44351da1c85258ff95",
    "status": 0,
    "value": {
       "acceptSslCerts": false,
@@ -41,22 +41,22 @@
    }
 }
 
-[4.706][FINE]:      Command received (/session/e9784a54b558b2d2e2d25306098e4f4c/url) with params {
+[4.495][FINE]:      Command received (/session/6337919192f37f44351da1c85258ff95/url) with params {
    "url": "http://support.sit1.scribestar/"
 }
 
-[4.706][FINER]:     Waiting for all views to stop loading...
-[4.708][FINER]:     Done waiting for all views to stop loading
-[7.218][FINER]:     Waiting for all views to stop loading...
-[7.220][FINER]:     Done waiting for all views to stop loading
-[7.221][FINE]:      Command finished (/session/e9784a54b558b2d2e2d25306098e4f4c/url) with response {
-   "sessionId": "e9784a54b558b2d2e2d25306098e4f4c",
+[4.495][FINER]:     Waiting for all views to stop loading...
+[4.510][FINER]:     Done waiting for all views to stop loading
+[9.519][FINER]:     Waiting for all views to stop loading...
+[9.536][FINER]:     Done waiting for all views to stop loading
+[9.537][FINE]:      Command finished (/session/6337919192f37f44351da1c85258ff95/url) with response {
+   "sessionId": "6337919192f37f44351da1c85258ff95",
    "status": 0,
    "value": {
 
    }
 }
 
-[7.275][FINE]:      Command received (/session/e9784a54b558b2d2e2d25306098e4f4c)
-[17.942][WARNING]:  Chrome still running, terminating...
-[17.942][INFO]:     Chrome shutdown
+[9.599][FINE]:      Command received (/session/6337919192f37f44351da1c85258ff95)
+[20.183][WARNING]:  Chrome still running, terminating...
+[20.184][INFO]:     Chrome shutdown
