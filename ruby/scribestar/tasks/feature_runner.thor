@@ -24,40 +24,32 @@ class FeatureRunner < Thor
         thread_pool = []
 
         t = Thread.new do |n|
-          invoke :set_driver_to_firefox
+          invoke :firefox_runner
         end
         thread_pool << t
 
         t = Thread.new do |n|
-          invoke :set_driver_to_chrome
-        end
-        thread_pool << t
-
-=begin
-        t = Thread.new do |n|
-          invoke :set_driver_to_headless
+          invoke :chrome_runner
         end
         thread_pool << t
 
         t = Thread.new do |n|
-          invoke :set_driver_to_ie
+          invoke :headless_runner
         end
         thread_pool << t
 
         t = Thread.new do |n|
-          invoke :set_driver_to_opera
+          invoke :ie_runner
         end
         thread_pool << t
-=end
 
 
         thread_pool.each {|th| th.join}
       }
     else
       feature_run = lambda {
-        invoke "feature_runner:set_driver_to_firefox", options
-        invoke "feature_runner:set_driver_to_chrome", options
-        #invoke "feature_runner:set_driver_to_ie", options
+        invoke "feature_runner:firefox_runner", options
+        invoke "feature_runner:chrome_runner", options
       }
     end
 
@@ -73,45 +65,42 @@ class FeatureRunner < Thor
     end
   end
 
-  desc "set_driver_to_firefox", "Run features on firefox"
+  desc "firefox_runner", "Run features on firefox"
   feature_runner_options.call # Set up common feature runner options defined above
-  def set_driver_to_firefox
+  def firefox_runner
     command = build_cucumber_command("firefox", options)
     run_command(command, options[:verbose])
   end
 
-  desc "set_driver_to_chrome", "Run features on chrome"
+  desc "chrome_runner", "Run features on chrome"
   feature_runner_options.call # Set up common feature runner options defined above
-  def set_driver_to_chrome
+  def chrome_runner
     command = build_cucumber_command("chrome", options)
     run_command(command, options[:verbose])
   end
 
-  desc "set_driver_to_ie", "Run features on internet explorer"
-  feature_runner_options.call # Set up common feature runner options defined above
-  def set_driver_to_ie
-    command = build_cucumber_command("ie", options)
-    run_command(command, options[:verbose])
-  end
-
-  desc "set_driver_to_opera", "Run features on opera"
-  feature_runner_options.call # Set up common feature runner options defined above
-  def set_driver_to_opera
-    command = build_cucumber_command("opera", options)
-    run_command(command, options[:verbose])
-  end
-
-  desc "set_driver_to_headless", "Run features in headless: phantomjs"
+  desc "headless_runner", "Run features in headless: phantomjs"
   feature_runner_options.call
-  def set_driver_to_headless
+  def headless_runner
     command = build_cucumber_command("headless", options)
+    run_command(command, options[:verbose])
+  end
+
+  desc "ie_runner", "Run features on IE"
+  feature_runner_options.call
+  def ie_runner
+    command = build_cucumber_command("ie", options)
     run_command(command, options[:verbose])
   end
 
 
   private
   def build_cucumber_command(profile, options)
-    command = "cd #{APP_ROOT} && cucumber -p #{profile}"
+    date_now = Time.now.strftime("%d-%m-%Y")
+    time_now = Time.now.strftime("%H_%M")
+    folder_name = "#{date_now}/#{time_now}"
+    FileUtils.mkdir_p "#{APP_ROOT}/reports/#{folder_name}"
+    command = "cd #{APP_ROOT} && cucumber -p #{profile} --format html --out reports/#{folder_name}/#{profile}.html"
     command += " --tags=#{options[:tags]}" if options[:tags]
     command += " --formatter=#{options[:formatter]}" if options[:formatter]
     command += " #{options[:other_cucumber_args]}" if options[:other_cucumber_args]

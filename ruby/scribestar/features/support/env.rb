@@ -2,24 +2,18 @@ require 'capybara'
 require 'cucumber'
 require 'webrat'
 require 'rspec'
-require 'selenium-webdriver'
 require 'capybara/poltergeist'
+require 'selenium-webdriver'
 
 include Capybara::DSL
 
-# Define Capybara configuration
-Capybara.default_driver = :selenium
-Capybara.default_wait_time = 5
-Capybara.run_server = true #Whether start server when testing
+# Capybara.current_driver = :selenium
 
 @drivers_path = File.dirname(__FILE__) + '/drivers/'        # set global drivers path
 @host_platform = Selenium::WebDriver::Platform              # get host operating system
 
 
-# SELENIUM_SERVER_JAR file required to run Opera and Selenium Grid
-#export SELENIUM_SERVER_JAR = '/../drivers/selenium-server-standalone.jar'
-
-
+#include a screenshot at the point of failure if scenario fails
 After do |scenario|
   if(scenario.failed?)
     page.driver.browser.save_screenshot("#{scenario.__id__}.png")

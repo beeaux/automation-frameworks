@@ -6,6 +6,9 @@ Feature: Go to ScribeStar homepage
 @support
 Scenario: ScribeStar Admin goes to support homepage
   Given I am on the support homepage
+  And I enter my admin login details
+  #|username |password |
+  #|admin    |test     |
 
 @instance
 Scenario: ScribeStar User goes to instance homepage

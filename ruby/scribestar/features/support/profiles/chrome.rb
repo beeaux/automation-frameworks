@@ -1,6 +1,8 @@
-require File.dirname(__FILE__) + "/../env.rb"
+require File.dirname(__FILE__) + '/../env.rb'
 
 # Register driver to use chrome
+Capybara.current_driver = :selenium
+
 Capybara.register_driver :selenium do |driver|
   chrome_driver_path = @drivers_path + 'chrome/chromedriver_'
 
@@ -17,7 +19,7 @@ Capybara.register_driver :selenium do |driver|
   end
 
   options = {
-      :browser => :chrome
+      browser: :chrome
   }
   Capybara::Selenium::Driver.new(driver, options)
 end
