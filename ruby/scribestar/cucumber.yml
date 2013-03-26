@@ -3,12 +3,12 @@
 
 default: --format html --out report.html --format pretty
 
-chrome: --format html --out report.html --format pretty -r features/support/profiles/chrome.rb -r features/all_features -r features/step_definitions
+chrome: --format html --out report.html --format pretty -r features/support/profiles/chrome.rb -r features/all_features -r features/step_definitions -r features/pages
 
-firefox: --format html --out report.html --format pretty -r features/support/profiles/firefox.rb -r features/all_features -r features/step_definitions
+firefox: --format html --out report.html --format pretty -r features/support/profiles/firefox.rb -r features/all_features -r features/step_definitions -r features/pages
 
-ie: --format pretty -r features/support/profiles/ie.rb -r features/all_features -r features/step_definitions
+ie: --format pretty -r features/support/profiles/ie.rb -r features/all_features -r features/step_definitions -r features/pages
 
-#opera: --format html --out report.html --format pretty -r features/support/profile/opera.rb -r features/all_features -r features/step_definitions
+#opera: --format html --out report.html --format pretty -r features/support/profile/opera.rb -r features/all_features -r features/step_definitions -r features/pages
 
-headless: --format html --out report.html --format pretty -r features/support/profile/headless.rb -r features/all_features -r features/step_definitions
+headless: --format html --out report.html --format pretty -r features/support/profile/headless.rb -r features/all_features -r features/step_definitions -r features/pages

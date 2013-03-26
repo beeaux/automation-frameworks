@@ -1,0 +1,5 @@
+default: --format pretty
+
+firefox: --format pretty -r features/support/profile/firefox.rb -r features/feature_sets -r features/step_definitions -r features/pages
+
+headless: --format pretty -r features/support/profile/headless.rb -r features/feature_sets -r features/step_definitions -r features/pages
