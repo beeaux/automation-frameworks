@@ -2,31 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afc91e8e-0918-43a7-9210-ea14213f4b24" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/.idea/encodings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/.gitignore" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/Gemfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/ReadMe.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/.idea/bakertech.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/features/support/profiles/chrome.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/cucumber.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/features/support/env.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/features/support/profiles/firefox.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/.idea/misc.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/features/support/profiles/headless.rb" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/features/support/profiles/ie.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/features/support/profiles/chrome.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/features/support/profiles/firefox.rb" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/features/feature_sets/test.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/features/step_definitions/test_steps.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/features/support/env.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/cucumber.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/.idea/bakertech.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../bakertech/ReadMe.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html" afterPath="$PROJECT_DIR$/report.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cucumber.yml" afterPath="$PROJECT_DIR$/cucumber.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/profiles/headless.rb" afterPath="$PROJECT_DIR$/features/support/profiles/headless.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html" afterPath="$PROJECT_DIR$/report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="scribestar.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364327882074" ignored="false" />
+    <file path="/Dummy.txt" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364335117201" ignored="false" />
     <file path="/.gitignore" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364328046099" ignored="false" />
     <file path="/README.txt" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364226795742" ignored="false" />
     <file path="/Gemfile" changelist="afc91e8e-0918-43a7-9210-ea14213f4b24" time="1364328551817" ignored="false" />
@@ -73,46 +72,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="env.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/support/env.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="3" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scribestar_homepage.feature" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/features/all_features/scribestar_homepage.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="24" selection-start="278" selection-end="278" vertical-scroll-proportion="0.28176796">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="homepage.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/step_definitions/homepage.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="headless.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/support/profiles/headless.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="22" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="feature_runner.thor" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="feature_runner.thor" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tasks/feature_runner.thor">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="18" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
+            <state line="1" column="18" selection-start="38" selection-end="38" vertical-scroll-proportion="0.029209621">
               <folding />
             </state>
           </provider>
@@ -165,9 +128,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="683" />
-    <option name="width" value="683" />
-    <option name="height" value="728" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -267,12 +231,12 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../rubytests" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -439,8 +403,8 @@
       <method />
     </configuration>
     <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Cucumber.scribestar_homepage" />
-      <item index="1" class="java.lang.String" itemvalue="Ruby.feature_runner" />
+      <item index="0" class="java.lang.String" itemvalue="Ruby.feature_runner" />
+      <item index="1" class="java.lang.String" itemvalue="Cucumber.scribestar_homepage" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -509,8 +473,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="683" y="0" width="683" height="728" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33501685" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -599,9 +563,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/features/step_definitions/ss_support/dasbboard.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
@@ -638,9 +600,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/features/step_definitions/ss_support/login.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -657,42 +617,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cucumber.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="169" selection-start="978" selection-end="978" vertical-scroll-proportion="0.6607774">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/support/profiles/headless.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="22" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/feature_runner.thor">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="18" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/support/env.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="3" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="169" selection-start="978" selection-end="978" vertical-scroll-proportion="0.6607774" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/step_definitions/homepage.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/all_features/scribestar_homepage.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="24" selection-start="278" selection-end="278" vertical-scroll-proportion="0.28176796">
+        <state line="9" column="24" selection-start="278" selection-end="278" vertical-scroll-proportion="0.28176796" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/support/env.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="3" selection-start="615" selection-end="615" vertical-scroll-proportion="0.6908127" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/support/profiles/headless.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="22" selection-start="619" selection-end="619" vertical-scroll-proportion="0.5106007" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/feature_runner.thor">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="18" selection-start="38" selection-end="38" vertical-scroll-proportion="0.029209621">
           <folding />
         </state>
       </provider>
