@@ -17,7 +17,8 @@ Capybara.register_driver :selenium do |driver|
   end
 
   options = {
-      browser: :internet_explorer
+      browser: :remote
+      desired_capabilities: :internet_explorer
   }
   Capybara::Driver::Selenium.new(driver, options)
 end
