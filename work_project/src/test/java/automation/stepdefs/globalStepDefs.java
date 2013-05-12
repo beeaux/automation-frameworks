@@ -2,8 +2,7 @@ package automation.stepdefs;
 
 import automation.helpers.WebDriverHelpers;
 import automation.pageobjects.GoogleMailPage;
-import automation.utilities.SharedDriver;
-import cucumber.annotation.en.Given;
+import automation.tests.SharedDriver;
 import org.openqa.selenium.support.PageFactory;
 
 /**

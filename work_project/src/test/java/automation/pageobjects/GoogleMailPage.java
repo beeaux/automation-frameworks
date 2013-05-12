@@ -1,7 +1,7 @@
 package automation.pageobjects;
 
 import automation.helpers.WebDriverHelpers;
-import automation.utilities.SharedDriver;
+import automation.tests.SharedDriver;
 import com.thoughtworks.selenium.Selenium;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

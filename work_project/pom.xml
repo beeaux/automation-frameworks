@@ -12,7 +12,7 @@
 
     <properties>
         <cucumber.version>1.0.11</cucumber.version>
-        <selenium.version>2.31.0</selenium.version>
+        <selenium.version>2.32.0</selenium.version>
         <projectDirectory>${basedir}/target</projectDirectory>
     </properties>
 

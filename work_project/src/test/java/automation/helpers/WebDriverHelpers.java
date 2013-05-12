@@ -1,6 +1,6 @@
 package automation.helpers;
 
-import automation.utilities.SharedDriver;
+import automation.tests.SharedDriver;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

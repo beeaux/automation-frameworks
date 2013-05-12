@@ -3,7 +3,7 @@ package automation.stepdefs;
 import automation.helpers.WebDriverHelpers;
 import automation.pageobjects.GoogleMailPage;
 import automation.pageobjects.HotmailPage;
-import automation.utilities.SharedDriver;
+import automation.tests.SharedDriver;
 import cucumber.annotation.en.And;
 import cucumber.annotation.en.Given;
 import cucumber.annotation.en.When;
