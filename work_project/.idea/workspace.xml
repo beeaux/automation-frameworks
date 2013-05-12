@@ -76,7 +76,7 @@
     </list>
     <ignored path="work_project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1368393213874" ignored="false" />
+    <file path="/Dummy.txt" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1368396592643" ignored="false" />
     <file path="/pom.xml" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1368368870487" ignored="false" />
     <file path="/SharedDriver.java" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1368370889923" ignored="false" />
     <file path="/WebDriverHelpers.java" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1368370908810" ignored="false" />
@@ -211,7 +211,7 @@
       <file leaf-file-name="SharedDriver.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/automation/utilities/SharedDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="47" selection-start="2155" selection-end="2155" vertical-scroll-proportion="0.773913">
+            <state line="52" column="47" selection-start="2155" selection-end="2155" vertical-scroll-proportion="0.5078261">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -543,7 +543,11 @@
       <created>1368393242401</created>
       <updated>1368393242401</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changes made by Biggus">
+      <created>1368396604057</created>
+      <updated>1368396604057</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -557,7 +561,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955357" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924107" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924107" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -568,7 +572,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24493062" sideWeight="0.6707589" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24493062" sideWeight="0.6707589" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -713,7 +717,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automation/utilities/SharedDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="47" selection-start="2155" selection-end="2155" vertical-scroll-proportion="0.773913">
+        <state line="52" column="47" selection-start="2155" selection-end="2155" vertical-scroll-proportion="0.5078261">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
