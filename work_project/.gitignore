@@ -1,0 +1,13 @@
+# IDE working files
+.idea/
+.iml
+
+# Build directories
+distrib/
+target/
+tmp/
+
+# Build & test droppings
+report.js
+report.xml
+*.log
