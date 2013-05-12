@@ -11,6 +11,6 @@ import org.junit.runner.RunWith;
  * To change this template use File | Settings | File Templates.
  */
 @RunWith(Cucumber.class)
-@Cucumber.Options(format = "html:target/wgsn", tags = {"@wgsn"})
-public class RunCukesTest {
+ @Cucumber.Options(format = "html:target/wgsn", tags = {"@wgsn"})
+ public class RunCukesTest {
 }
