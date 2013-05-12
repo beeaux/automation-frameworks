@@ -11,6 +11,6 @@ import org.junit.runner.RunWith;
  * To change this template use File | Settings | File Templates.
  */
 @RunWith(Cucumber.class)
-@Cucumber.Options(format = "html:target/work_project", tags = {"@SampleTests"})
+@Cucumber.Options(format = "html:target/work_project", tags = {"@yomi"})
 public class RunCukesTest {
 }

@@ -48,19 +48,19 @@ public class WebDriverHelpers extends SharedDriver{
     /*
         Custom actions.
      */
-    public void clickOn(WebElement element) {
+    public static void clickOn(WebElement element) {
         element.click();
     }
 
-    public void typeText(WebElement element, String _string) {
+    public static void typeText(WebElement element, String _string) {
         if(!element.getAttribute("value").isEmpty()) {
             element.clear();
         }
         element.sendKeys(_string);
     }
 
-    public void navigateTo(WebDriver driver, String url) {
-        driver.navigate().to(url);
+    public static void navigateTo(String url) {
+        current().navigate().to(url);
     }
 
     public static void mouseOver(WebElement element) {

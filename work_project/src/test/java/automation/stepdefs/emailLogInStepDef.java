@@ -41,7 +41,7 @@ public class emailLogInStepDef {
         }
         else if(url.equalsIgnoreCase("hotmail")){
 
-              hotmailpage.open();
+              //hotmailpage.open();
         }
 
 

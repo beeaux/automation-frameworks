@@ -7,7 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import static automation.helpers.WebDriverHelpers.verifyPageTitle;
+import static automation.helpers.WebDriverHelpers.*;
+import static automation.tests.SharedDriver.url;
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,19 +18,18 @@ import static automation.helpers.WebDriverHelpers.verifyPageTitle;
  * To change this template use File | Settings | File Templates.
  */
 public class HotmailPage {
+    private final SharedDriver Driver;
 
-    WebDriverHelpers webHelpers = new WebDriverHelpers();
-    private Selenium selenium;
-    private SharedDriver Driver;
-    String url = "http://www.hotmail.com";
-    private WebDriver driver;
-
-    public void open() {
+    public HotmailPage(WebDriver driver) {
+        navigateTo(url);
+        this.Driver = (SharedDriver)driver;
+    }
+    /*public void open() {
         driver.navigate().to(url);
 
-        verifyPageTitle("Drag And Drop HTML Editor Online WYSIWYG Visual Editor, Free HTML Editor Online Web Page Builder, Web Based WYSIWYG Editor");
+        //verifyPageTitle("Drag And Drop HTML Editor Online WYSIWYG Visual Editor, Free HTML Editor Online Web Page Builder, Web Based WYSIWYG Editor");
         this.Driver = (SharedDriver) driver;
-    }
+    }*/
 
     @FindBy (css = "#idDiv_PWD_UsernameTb") private WebElement emailField;
     @FindBy (css = "#idDiv_PWD_PasswordTb") private WebElement passwordField;
@@ -39,17 +39,17 @@ public class HotmailPage {
 
     public void enterEmailAddress(String email){
 
-        webHelpers.typeText(emailField,email);
+        typeText(emailField,email);
     }
 
     public void enterPassword(String password){
 
-        webHelpers.typeText(passwordField,password);
+        typeText(passwordField,password);
     }
 
     public void clickSignIn(){
 
-        webHelpers.clickOn(signInButton);
+        clickOn(signInButton);
     }
 
     public void signIn(String email, String password){
