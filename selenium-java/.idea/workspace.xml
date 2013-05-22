@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/drivers/ie/IEDriverServer_Win32/IEDriverServer.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/drivers/ie/IEDriverServer_x64/IEDriverServer.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/drivers/chrome/chromedriver_win/chromedriver.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/drivers/chrome/chromedriver_linux32/chromedriver" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/drivers/chrome/chromedriver_linux64/chromedriver" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/drivers/chrome/chromedriver_mac/chromedriver" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/drivers/phantomjs/phantomjs_win/phantomjs.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/drivers/phantomjs/phantomjs_mac/phantomjs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../work_project/ReadMe.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/drivers/chrome/chromedriver_linux32/adb_commands.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/drivers/chrome/chromedriver_linux64/adb_commands.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/drivers/chrome/chromedriver_mac/adb_commands.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="selenium-java-automation.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1369241815611" ignored="false" />
+    <file path="/Dummy.txt" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1369242207251" ignored="false" />
     <file path="/pom.xml" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1369155566941" ignored="false" />
     <file path="/RunTests.java" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1369068974768" ignored="false" />
     <file path="/SharedDriver.java" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1369241308834" ignored="false" />
@@ -513,7 +525,11 @@
       <created>1369241694317</created>
       <updated>1369241694317</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ACE-01&#10;------------&#10;Initial framework commit">
+      <created>1369241829199</created>
+      <updated>1369241829199</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
