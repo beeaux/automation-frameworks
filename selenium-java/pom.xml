@@ -11,12 +11,15 @@
     <name>Selenium Automation Framework</name>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <outputDirectory>${project.build.directory}</outputDirectory>
         <seleniumVersion>2.32.0</seleniumVersion>
         <cukeVersion>1.1.3</cukeVersion>
     </properties>
 
     <reporting>
-        <outputDirectory>${project.basedir}/target/reports</outputDirectory>
+        <outputDirectory>${outputDirectory}/reports</outputDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
