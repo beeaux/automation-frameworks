@@ -117,7 +117,7 @@ public class SharedDriver extends EventFiringWebDriver {
             }
         }  else if(profile.equalsIgnoreCase("Firefox")) {
             /*
-
+                assigns firefox driver if user-defined value matches
              */
             try {
                 setWebDriverToFirefox();
@@ -126,7 +126,8 @@ public class SharedDriver extends EventFiringWebDriver {
             }
         } else if(profile.equalsIgnoreCase("PhantomJS") || profile.equalsIgnoreCase("Headless")) {
             /*
-
+                dynamically assigns phantomjs driver by identifying operating system
+                and bit architecture.
              */
             if(isPlatform().equalsIgnoreCase("WINDOWS")) {
                 headless_driver = headless_driver + "_win" + File.separator + headless_driver + ".exe";
@@ -146,7 +147,7 @@ public class SharedDriver extends EventFiringWebDriver {
             }
         }  else if(profile.equalsIgnoreCase("Android")) {
             /*
-
+                assigns android driver if user-defined value matches
              */
             try {
                 setWebDriverToAndroid();
@@ -213,8 +214,7 @@ public class SharedDriver extends EventFiringWebDriver {
         capabilities = DesiredCapabilities.internetExplorer();
         capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
         capabilities.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS, true);
-        capabilities.setCapability(InternetExplorerDriver.ENABLE_PERSISTENT_HOVERING, true);
-
+        
         WEB_DRIVER = new RemoteWebDriver(service.getUrl(), capabilities);
     }
 
