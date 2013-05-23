@@ -139,14 +139,12 @@ public class WebDriverExtensions extends SharedDriver {
     }
 
     public static void chooseOkOnNextConfirmation() {
-        Alert alert = switchToAlert();
-        alert.accept();
+        switchToAlert().accept();
         switchToActiveElement();
     }
 
     public static void chooseCancelOnNextConfirmation() {
-        Alert alert = switchToAlert();
-        alert.dismiss();
+        switchToAlert().dismiss();
         switchToActiveElement();
     }
 }
