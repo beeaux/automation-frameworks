@@ -58,7 +58,7 @@ public class SharedDriver extends EventFiringWebDriver {
             platform = "LINUX";
         } else if(Platform.ANDROID.is(current)) {
             platform = "ANDROID";
-        } else {
+        } else if(Platform.WIN8.is(current) || Platform.VISTA.is(current) || Platform.XP.is(current) || Platform.WINDOWS.is(current)) {
             platform = "WINDOWS";
         }
         return platform;
