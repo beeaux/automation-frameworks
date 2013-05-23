@@ -40,7 +40,6 @@ public class SharedDriver extends EventFiringWebDriver {
     private static String chrome_driver = "chromedriver";
     private static String ie_driver = "IEDriverServer";
     private static String headless_driver = "phantomjs";
-    private static String firefox_bin_directory = System.getProperty("webdriver.firefox.bin");
 
     private static final Thread CLOSE_THREAD = new Thread() {
         @Override
@@ -192,7 +191,7 @@ public class SharedDriver extends EventFiringWebDriver {
 
     private static void setWebDriverToFirefox() throws MalformedURLException {
         capabilities = DesiredCapabilities.firefox();
-        capabilities.setCapability(FirefoxDriver.BINARY, firefox_bin_directory);
+        capabilities.setCapability(FirefoxDriver.BINARY, System.getProperty("webdriver.firefox.bin"));
         capabilities.setCapability(String.valueOf(FirefoxDriver.DEFAULT_ENABLE_NATIVE_EVENTS), true);
 
         WEB_DRIVER = new FirefoxDriver(capabilities);
