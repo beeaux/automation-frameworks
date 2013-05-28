@@ -49,7 +49,7 @@ public class SharedDriver extends EventFiringWebDriver {
     };
 
     private static String isPlatform() {
-        String platform;
+        String platform = null;
         Platform current = Platform.getCurrent();
         if(Platform.MAC.is(current)) {
             platform = "MAC";
@@ -198,7 +198,7 @@ public class SharedDriver extends EventFiringWebDriver {
     }
 
     private static void setWebDriverToIE() throws MalformedURLException {
-        String ie_driver_path = drivers + File.separator + "ie" + File.separator + headless_driver;
+        String ie_driver_path = drivers + File.separator + "ie" + File.separator + ie_driver;
         service = new InternetExplorerDriverService.Builder()
                 .usingDriverExecutable(new File(ie_driver_path))
                 .usingAnyFreePort()
