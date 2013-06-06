@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.Wait;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
+import java.util.List;
 
 public class WebDriverExtensions extends SharedDriver {
     private static WebDriver DRIVER = SharedDriver.WEB_DRIVER;
@@ -36,8 +37,8 @@ public class WebDriverExtensions extends SharedDriver {
         return current().findElement(By.cssSelector(css));
     }
 
-    public static WebElement findElementsByCssSelector(String css) {
-        return current().findElement(By.cssSelector(css));
+    public static List<WebElement> findElementsByCssSelector(String css) {
+        return current().findElements(By.cssSelector(css));
     }
 
     public static WebElement findElementByLinkText(String linkText) {
