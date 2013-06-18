@@ -68,7 +68,10 @@ public class SharedDriver extends EventFiringWebDriver {
      */
     public SharedDriver() {
         super(WEB_DRIVER);
-        manage().window().maximize();
+        
+        if(!profile.equalsIgnoreCase("safari") || !profile.equalsIgnoreCase("android") || !profile.startsWith("ip")) {
+            manage().window().maximize();
+        }
         manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
@@ -76,7 +79,7 @@ public class SharedDriver extends EventFiringWebDriver {
         /*
             launches selenium server standalone for firefox, iphone and ipad to ensure support for RemoteWebDriver instance
         */
-        if(profile.equalsIgnoreCase("firefox") || profile.equalsIgnoreCase("iphone") || profile.equalsIgnoreCase("ipad")) {
+        if(profile.equalsIgnoreCase("firefox") || profile.startsWith("ip") || profile.equalsIgnoreCase("android")) {
             launchSeleniumServerStandalone();
         }
         
@@ -180,6 +183,10 @@ public class SharedDriver extends EventFiringWebDriver {
     }
 
     private static void setWebDriverToAndroid() throws MalformedURLException {
+        capabilities = DesiredCapabilities.android();
+        setAdditionalCapabilities();
+
+        WEBDRIVER = new RemoteWebDriver(new URL("http://localhost:8080/wd/hub"), capabilities);
 
     }
     
