@@ -161,6 +161,19 @@ public class SharedDriver extends EventFiringWebDriver {
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
+        } else if(profile.equalsIgnoreCase("safari")) {
+            /*
+                assigns safari driver if user-defined value matches
+             */
+             if(isPlatform().equalsIgnoreCase("WINDOWS") || isPlatform().equalsIgnoreCase("MAC")) {
+                try {
+                    setWebDriverToSafari();
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                } 
+            } else {
+                System.err.println(profile + "is not supported on " + isPlatform());
+            } 
         }
 
         Runtime.getRuntime().addShutdownHook(CLOSE_THREAD);
@@ -168,6 +181,20 @@ public class SharedDriver extends EventFiringWebDriver {
 
     private static void setWebDriverToAndroid() throws MalformedURLException {
 
+    }
+    
+     private static void setWebDriverToSafari() throws MalformedURLException {
+        capabilities = DesiredCapabilities.safari();
+        /*
+            important system settings to ensure safari runs smoothly.
+            note: screenshot is captured using SafariDriver instead of RemoteWebDriver.
+         */
+        capabilities.setCapability(SafariDriver.CLEAN_SESSION_CAPABILITY, true);
+        capabilities.setCapability(SafariDriver.DATA_DIR_CAPABILITY, System.getProperty("webdriver.safari.driver"));
+        capabilities.setCapability(SafariDriver.NO_INSTALL_EXTENSION_CAPABILITY, false);
+        setAdditionalCapabilities();
+
+        WEBDRIVER = new SafariDriver(capabilities);
     }
 
     private static void setWebDriverToHeadless() throws MalformedURLException {
