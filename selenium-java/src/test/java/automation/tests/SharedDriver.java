@@ -73,7 +73,14 @@ public class SharedDriver extends EventFiringWebDriver {
     }
 
     static {
-        if(profile.equalsIgnoreCase("Chrome")){
+        /*
+            launches selenium server standalone for firefox, iphone and ipad to ensure support for RemoteWebDriver instance
+        */
+        if(profile.equalsIgnoreCase("firefox") || profile.equalsIgnoreCase("iphone") || profile.equalsIgnoreCase("ipad")) {
+            launchSeleniumServerStandalone();
+        }
+        
+        if(profile.equalsIgnoreCase("chrome")){
             /*
                 dynamically assigns chrome driver by identifying operating system
                 and bit architecture.
@@ -94,7 +101,7 @@ public class SharedDriver extends EventFiringWebDriver {
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
-        } else if (profile.equalsIgnoreCase("IE")) {
+        } else if (profile.equalsIgnoreCase("ie")) {
             /*
                 dynamically assigns ie driver by identifying operating system
                 and bit architecture.
@@ -106,15 +113,16 @@ public class SharedDriver extends EventFiringWebDriver {
                 } else {
                     ie_driver = ie_driver + "_Win32" + File.separator + ie_driver + ".exe";
                 }
+                
+                try {
+                    setWebDriverToIE();
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                }
             } else {
                 System.err.println(profile + "is not supported on " + isPlatform());
-            }
-            try {
-                setWebDriverToIE();
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
-            }
-        }  else if(profile.equalsIgnoreCase("Firefox")) {
+            }           
+        }  else if(profile.equalsIgnoreCase("firefox")) {
             /*
                 assigns firefox driver if user-defined value matches
              */
@@ -123,7 +131,7 @@ public class SharedDriver extends EventFiringWebDriver {
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
-        } else if(profile.equalsIgnoreCase("PhantomJS") || profile.equalsIgnoreCase("Headless")) {
+        } else if(profile.equalsIgnoreCase("phantomjs") || profile.equalsIgnoreCase("headless")) {
             /*
                 dynamically assigns phantomjs driver by identifying operating system
                 and bit architecture.
@@ -144,7 +152,7 @@ public class SharedDriver extends EventFiringWebDriver {
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
-        }  else if(profile.equalsIgnoreCase("Android")) {
+        }  else if(profile.equalsIgnoreCase("android")) {
             /*
                 assigns android driver if user-defined value matches
              */
@@ -177,9 +185,7 @@ public class SharedDriver extends EventFiringWebDriver {
 
         capabilities = DesiredCapabilities.phantomjs();
         capabilities.setCapability(CapabilityType.TAKES_SCREENSHOT, true);
-        capabilities.setJavascriptEnabled(true);
-        capabilities.setCapability(CapabilityType.SUPPORTS_ALERTS, true);
-        capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+        setAdditionalCapabilities();
 
         if(isPlatform().equalsIgnoreCase("WINDOWS")) {
             capabilities.setCapability(CapabilityType.BROWSER_NAME, BrowserType.INTERNET_EXPLORER);
@@ -193,8 +199,9 @@ public class SharedDriver extends EventFiringWebDriver {
         capabilities = DesiredCapabilities.firefox();
         capabilities.setCapability(FirefoxDriver.BINARY, System.getProperty("webdriver.firefox.bin"));
         capabilities.setCapability(String.valueOf(FirefoxDriver.DEFAULT_ENABLE_NATIVE_EVENTS), true);
+        setAdditionalCapabilities();
 
-        WEB_DRIVER = new FirefoxDriver(capabilities);
+        WEB_DRIVER = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
     }
 
     private static void setWebDriverToIE() throws MalformedURLException {
@@ -213,6 +220,7 @@ public class SharedDriver extends EventFiringWebDriver {
         capabilities = DesiredCapabilities.internetExplorer();
         capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
         capabilities.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS, true);
+        setAdditionalCapabilities();
         
         WEB_DRIVER = new RemoteWebDriver(service.getUrl(), capabilities);
     }
@@ -231,8 +239,27 @@ public class SharedDriver extends EventFiringWebDriver {
         }
 
         capabilities = DesiredCapabilities.chrome();
+        setAdditionalCapabilities();
 
         WEB_DRIVER = new RemoteWebDriver(service.getUrl(), capabilities);
+    }
+    
+    private static void setAdditionalCapabilities() {
+        capabilities.setJavascriptEnabled(true);
+        capabilities.setCapability(CapabilityType.SUPPORTS_ALERTS, true);
+        capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+        capabilities.setCapability(capabilityType.UNEXPECTED_ALERT_BEHAVIOUR, "ignore");
+    }
+    
+    private static void launchSeleniumServerStandalone() {
+        try {
+            String selenium_standalone_server_directory = "src" + File.separator + "test" + File.separator + "resources" + File.separator + "drivers";
+            
+            Runtime runtime = Runtime.getRuntime();
+            runtime.exec("cmd /c start, java -jar " + selenium_standalone_server_directory + File.separator + "selenium-server-standalone.jar");
+        } catch (Exception err) {
+            throw new RuntimeException(err.getMessage());
+        }
     }
 
     @Override
