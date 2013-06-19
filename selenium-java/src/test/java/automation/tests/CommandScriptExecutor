@@ -1,8 +1,8 @@
-package lloyds.tbt.tests;
+package automation.tests;
 
 import java.io.IOException;
 
-import static lloyds.tbt.tests.SharedDriver.isPlatform;
+import static automation.tests.SharedDriver.isPlatform;
 
 public class CommandScriptExecutor {
     private static String cmd = null;
