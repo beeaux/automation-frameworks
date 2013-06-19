@@ -25,6 +25,7 @@ import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
 import static automation.tests.ScreenCaptureHook.embedSnapshot;
+import static automation.tests.CommandScriptExecutor.executeCommandScript;
 
 public class SharedDriver extends EventFiringWebDriver {
     public static RemoteWebDriver WEB_DRIVER;
@@ -48,7 +49,7 @@ public class SharedDriver extends EventFiringWebDriver {
         }
     };
 
-    private static String isPlatform() {
+    public static String isPlatform() {
         String platform = null;
         Platform current = Platform.getCurrent();
         if(Platform.MAC.is(current)) {
@@ -69,7 +70,7 @@ public class SharedDriver extends EventFiringWebDriver {
     public SharedDriver() {
         super(WEB_DRIVER);
         
-        if(!profile.equalsIgnoreCase("safari") || !profile.equalsIgnoreCase("android") || !profile.startsWith("ip")) {
+        if(!profile.equalsIgnoreCase("android") || !profile.startsWith("ip")) {
             manage().window().maximize();
         }
         manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -80,7 +81,9 @@ public class SharedDriver extends EventFiringWebDriver {
             launches selenium server standalone for firefox, iphone and ipad to ensure support for RemoteWebDriver instance
         */
         if(profile.equalsIgnoreCase("firefox") || profile.startsWith("ip") || profile.equalsIgnoreCase("android")) {
-            launchSeleniumServerStandalone();
+            String command = "java -jar src" + File.separator + "test"
+                    + File.separator + "resources" + File.separator + "drivers" + File.separator + "selenium-server-standalone.jar";
+            executeCommandScript(command);
         }
         
         if(profile.equalsIgnoreCase("chrome")){
@@ -285,17 +288,6 @@ public class SharedDriver extends EventFiringWebDriver {
         capabilities.setCapability(capabilityType.UNEXPECTED_ALERT_BEHAVIOUR, "ignore");
     }
     
-    private static void launchSeleniumServerStandalone() {
-        try {
-            String selenium_standalone_server_directory = "src" + File.separator + "test" + File.separator + "resources" + File.separator + "drivers";
-            
-            Runtime runtime = Runtime.getRuntime();
-            runtime.exec("cmd /c start, java -jar " + selenium_standalone_server_directory + File.separator + "selenium-server-standalone.jar");
-        } catch (Exception err) {
-            throw new RuntimeException(err.getMessage());
-        }
-    }
-
     @Override
     public void close() {
         if(Thread.currentThread() != CLOSE_THREAD) {
