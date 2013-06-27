@@ -2,11 +2,12 @@ package
 
 public class SearchResults {
   
-  private static List<WebElement> Results() {
+  public static List<WebElement> Results() {
     List<WebElement> results = findElementsByCssSelector(".list.results.apsList .prod.celwidget");
     return results;
   }
   
+  /*
   private static WebElement FirstResult() {
     for(WebElement result : Results()) {
       if(result.getAttribute("class").contains("fstRow")) {
@@ -15,6 +16,7 @@ public class SearchResults {
     }
     return null;
   }
+  */
   
   public static int NoOfResults() {
     if(Results() == null) return;
