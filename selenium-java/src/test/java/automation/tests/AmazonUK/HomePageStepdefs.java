@@ -1,5 +1,7 @@
-package
+package automation.tests.AmazonUK;
 
+import automation.sites.AmazonUK.HomePage;
+import automation.tests.SharedDriver;
 import cucumber.api.java.en.Given;
 import org.openqa.selenium.support.PageFactory;
 

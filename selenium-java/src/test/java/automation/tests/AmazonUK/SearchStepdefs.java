@@ -1,4 +1,13 @@
-package
+package automation.tests.AmazonUK;
+
+import automation.tests.SharedDriver;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import org.junit.Assert;
+
+import static automation.sites.AmazonUK.Search.isSearchDisplayed;
+import static automation.sites.AmazonUK.Search.search;
+import static automation.sites.AmazonUK.SearchResults.NoOfResults;
 
 public class SearchStepdefs {
   private SharedDriver Driver;
@@ -19,6 +28,7 @@ public class SearchStepdefs {
   
   @Then("^there are search results displayed$")
   public void there_are_search_results_displayed() {
+
     Assert.assertTrue(!NoOfResults().isEmpty());
   }
   

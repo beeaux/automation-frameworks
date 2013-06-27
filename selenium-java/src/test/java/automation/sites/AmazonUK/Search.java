@@ -1,4 +1,9 @@
-package
+package automation.sites.AmazonUK;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebElement;
+
+import static automation.core.WebDriverExtensions.*;
 
 public class Search {
 
