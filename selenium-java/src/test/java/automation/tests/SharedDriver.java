@@ -15,6 +15,7 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.service.DriverService;
+import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.events.AbstractWebDriverEventListener;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import sun.plugin2.util.BrowserType;
@@ -22,6 +23,7 @@ import sun.plugin2.util.BrowserType;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import static automation.tests.ScreenCaptureHook.embedSnapshot;
@@ -189,7 +191,7 @@ public class SharedDriver extends EventFiringWebDriver {
         capabilities = DesiredCapabilities.android();
         setAdditionalCapabilities();
 
-        WEBDRIVER = new RemoteWebDriver(new URL("http://localhost:8080/wd/hub"), capabilities);
+        WEB_DRIVER = new RemoteWebDriver(new URL("http://localhost:8080/wd/hub"), capabilities);
 
     }
     
@@ -204,7 +206,7 @@ public class SharedDriver extends EventFiringWebDriver {
         capabilities.setCapability(SafariDriver.NO_INSTALL_EXTENSION_CAPABILITY, false);
         setAdditionalCapabilities();
 
-        WEBDRIVER = new SafariDriver(capabilities);
+        WEB_DRIVER = new SafariDriver(capabilities);
     }
 
     private static void setWebDriverToHeadless() throws MalformedURLException {
@@ -285,7 +287,7 @@ public class SharedDriver extends EventFiringWebDriver {
         capabilities.setJavascriptEnabled(true);
         capabilities.setCapability(CapabilityType.SUPPORTS_ALERTS, true);
         capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-        capabilities.setCapability(capabilityType.UNEXPECTED_ALERT_BEHAVIOUR, "ignore");
+        capabilities.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, "ignore");
     }
     
     @Override
