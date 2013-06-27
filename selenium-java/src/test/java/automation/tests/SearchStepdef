@@ -9,6 +9,7 @@ public class SearchStepdefs {
   
   @Then("^the search bar is displayed$")
   public void the_search_bar_is_displayed() throws Throwable {
+    Assert.assertTrue(isSearchDisplayed());
   }
   
   @When("^I search for ([^\"]*) in ([^\"]*)$")
@@ -18,6 +19,7 @@ public class SearchStepdefs {
   
   @Then("^there are search results displayed$")
   public void there_are_search_results_displayed() {
+    Assert.assertTrue(!NoOfResults().isEmpty());
   }
   
   @Then("^the price of the first result should be ([^\"]*)$")
@@ -27,7 +29,7 @@ public class SearchStepdefs {
   
   @Then("^the number of results displayed should be more than (\\d+)$")
   public void the_number_of_results_displayed_should_be_more_than(int noOfResults) {
-    int searchResults = SearchResults().size();
+    int searchResults = NoOfResults();
     if(searchResults > noOfResults) {
       System.out.println(searchResult);
     }
