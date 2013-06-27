@@ -16,7 +16,8 @@ public class Search {
   
   public static void isSearchDisplayed() {
     WebElement element = findElementByCssSelector("form.nav-searchbar-inner");
-    Assert.assertTrue(isElementDisplayed(element));
+    waitForElement(element);
+    return isElementDisplayed(element);
   }
 
   public static void enterSearchCriteria(String criteria) {
@@ -32,8 +33,9 @@ public class Search {
   
   public static void search(String department, String criteria) {
     try {
-          selectSearchDepartment(department);
-          enterSearchCriteria(criteria);
+        Assert.assertTrue(isSearchDisplayed());
+        selectSearchDepartment(department);
+        enterSearchCriteria(criteria);
     } catch (Exception e) {
         e.printStackTrace();
     }
