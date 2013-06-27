@@ -1,0 +1,41 @@
+package
+
+public class Search {
+
+  private static WebElement SearchTextbox() {
+    return findElementByCssSelector("#twotabsearchtextbox");
+  }
+  
+  private static WebElement SearchButton() {
+    return findElementByCssSelector(".nav-submit-button.nav-sprite input[value='Go']");
+  }
+  
+  private static WebElement SearchDropdownBox() {
+    return findElementByCssSelector("#searchDropdownBox");
+  }
+  
+  public static void isSearchDisplayed() {
+    WebElement element = findElementByCssSelector("form.nav-searchbar-inner");
+    Assert.assertTrue(isElementDisplayed(element));
+  }
+
+  public static void enterSearchCriteria(String criteria) {
+    typeText(SearchTextbox(), criteria);
+  }
+  
+  public static void selectSearchDepartment(String department) {
+    if(department == null || department.isEmpty())
+      department = "All Departments";
+      
+    select(SearchDropdownBox(), department);
+  }
+  
+  public static void search(String department, String criteria) {
+    try {
+          selectSearchDepartment(department);
+          enterSearchCriteria(criteria);
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+  }  
+}
