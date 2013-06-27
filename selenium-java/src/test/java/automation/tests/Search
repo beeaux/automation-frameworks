@@ -14,7 +14,7 @@ public class Search {
     return findElementByCssSelector("#searchDropdownBox");
   }
   
-  public static void isSearchDisplayed() {
+  public static boolean isSearchDisplayed() {
     WebElement element = findElementByCssSelector("form.nav-searchbar-inner");
     waitForElement(element);
     return isElementDisplayed(element);
