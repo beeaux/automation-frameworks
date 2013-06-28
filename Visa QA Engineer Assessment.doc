@@ -1,7 +1,7 @@
 Theory Assessment
 
 1. Explain how the role of a tester is different between Agile and Waterfall development environments.
-  In agile methodology, the tester is 
+  In agile methodology, the tester's role involve been part of the end-to-end application development lifecycle from the on-set, while in waterfall involvement is not till later stages of the lifecycle. The tester is involved in the planning sessions to provide estimates/efforts, design test scenarios and ensuring acceptance criteria are met, while in waterfall, the tester is more confined to testing functions, such as drafting test cases and executing tests. Also agile
 
 2. List important criteria to consider when deciding which test cases/scenarios should be automated.
   a. The use of static content to assert test results
@@ -19,11 +19,17 @@ Theory Assessment
   a. Pair programming / pair code review and rotation of developement pair to facilitate knowledge sharing.
   b. acceptance test-driven development and unit testing.
   c. version control best practices, i.e. checking in code frequently, adding meaningful and concise description to check-in along with the name of the development pair.  
-  d. pairing with testers.
-  e. use of continuous integration tool.
+  d. pairing with testers to execute parallel testing.
+  e. use of continuous integration build system.
   f. build should not be left broken
 
 6. Given you have a mobile application that handles sensitive data and financial transactions, and that the application must work on 25+ combinations of operating systems and browsers, across multiple locales and you are using an iterative development approach, what overall test strategy would you apply to keep your regression test defect detection rate low?
-  The 
+  - The overall test approach will involve priotising compatibility (locales, O/S and browsers) matrix according to business-critical acceptance criteria, i.e. how has the business grouped the compatibility tiers using MoSCoW, if none are defined, ideally liaise with the business and the analytics team to define such matrix. 
+  
+  In addition to the matrix, what technical challenges could impact the end-to-end test process, especially, where open-source technology is to be implemented, i.e. frequency of technology updates and releases, does the technology support the MUST-have compatibility tier. 
+  
+  The test framework should be developed with an object-oriented approach and closely mirror the architecture of the application under test, as this will enable segregated testing where possible, i.e. the ability to test business logic independently of user interface, such as testing restful services and third-party APIs. The test strategy will include utilising tags to defined different test goals, such as api-testing to test api, functional for functional testing, user-web to test page layout and rendering, etc.
+  
+  Finally, to ensure that the overall strategy is successful, a defect review process must be implemented to sign-off what is actual application defect and what is an exception caused by the test framework. Defect should be promptly communicated to the development team and logged against the appropriate feature and scenario.
   
   
