@@ -1,7 +1,7 @@
 Theory Assessment
 
 1. Explain how the role of a tester is different between Agile and Waterfall development environments.
-  In agile methodology, the tester's role involve been part of the end-to-end application development lifecycle from the on-set, while in waterfall involvement is not till later stages of the lifecycle. The tester is involved in the planning sessions to provide estimates/efforts, design test scenarios and ensuring acceptance criteria are met, while in waterfall, the tester is more confined to testing functions, such as drafting test cases and executing tests. Also agile
+  In agile methodology, the tester's role involve been part of the end-to-end application development lifecycle from the on-set, while in waterfall involvement is not till later stages of the lifecycle. The tester is involved in the planning sessions to provide estimates/efforts, design test scenarios and ensuring acceptance criteria are met, while in waterfall, the tester is more confined to testing functions, such as drafting test cases and executing tests. Also the agile approach facilitate continuous communication between testers and developers rather than each unit working in silos as frequently observed in waterfall. Agile (scrum) events such as stand up, sprint planning, retrospective, etc provide the tester more visibility than in waterfall, which allows that tester to carry research and feasibility studies of test scenarios and technology trends to support his/her scope of work.
 
 2. List important criteria to consider when deciding which test cases/scenarios should be automated.
   a. The use of static content to assert test results
