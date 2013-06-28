@@ -5,6 +5,8 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
 
+import static automation.core.WebDriverExtensions.findElementByCssSelector;
+import static automation.core.WebDriverExtensions.waitForElement;
 import static automation.sites.AmazonUK.Search.isSearchDisplayed;
 import static automation.sites.AmazonUK.Search.search;
 import static automation.sites.AmazonUK.SearchResults.NoOfResults;
@@ -27,9 +29,9 @@ public class SearchStepdefs {
   }
   
   @Then("^there are search results displayed$")
-  public void there_are_search_results_displayed() {
-
-    //Assert.assertTrue(!NoOfResults().isEmpty());
+  public void there_are_search_results_displayed() throws InterruptedException {
+    waitForElement(findElementByCssSelector("#atfResults"));
+    Assert.assertTrue(!(NoOfResults() > 0));
   }
   
   @Then("^the price of the first result should be ([^\"]*)$")
@@ -40,7 +42,7 @@ public class SearchStepdefs {
   @Then("^the number of results displayed should be more than (\\d+)$")
   public void the_number_of_results_displayed_should_be_more_than(int noOfResults) {
     int searchResults = NoOfResults();
-    if(searchResults > noOfResults) {
+    if(searchResults < noOfResults) {
       System.out.println(searchResults);
     }
   }

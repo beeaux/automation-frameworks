@@ -41,6 +41,7 @@ public class Search {
         Assert.assertTrue(isSearchDisplayed());
         selectSearchDepartment(department);
         enterSearchCriteria(criteria);
+        clickOn(SearchButton());
     } catch (Exception e) {
         e.printStackTrace();
     }

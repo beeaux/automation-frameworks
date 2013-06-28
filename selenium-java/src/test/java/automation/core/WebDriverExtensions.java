@@ -25,7 +25,7 @@ public class WebDriverExtensions extends SharedDriver {
 
     static {
         wait = new FluentWait<>(current())
-                .withTimeout(3, TimeUnit.SECONDS)
+                .withTimeout(9, TimeUnit.SECONDS)
                 .pollingEvery(1, TimeUnit.SECONDS)
                 .ignoring(NoSuchElementException.class);
     }

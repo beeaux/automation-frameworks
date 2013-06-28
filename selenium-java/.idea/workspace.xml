@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automation/tests/RunTests.java" afterPath="$PROJECT_DIR$/src/test/java/automation/tests/RunTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/automation/tests/AmazonUK/Search.feature" afterPath="$PROJECT_DIR$/src/test/resources/automation/tests/AmazonUK/Search.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/Search.java" afterPath="$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/Search.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automation/tests/AmazonUK/SearchStepdefs.java" afterPath="$PROJECT_DIR$/src/test/java/automation/tests/AmazonUK/SearchStepdefs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automation/tests/SharedDriver.java" afterPath="$PROJECT_DIR$/src/test/java/automation/tests/SharedDriver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automation/core/WebDriverExtensions.java" afterPath="$PROJECT_DIR$/src/test/java/automation/core/WebDriverExtensions.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="selenium-java-automation.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372349500278" ignored="false" />
+    <file path="/Dummy.txt" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372349761669" ignored="false" />
     <file path="/pom.xml" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372081040513" ignored="false" />
     <file path="/RunTests.java" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372349151539" ignored="false" />
     <file path="/SharedDriver.java" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372349274862" ignored="false" />
@@ -21,8 +20,9 @@
     <file path="/HomePage.java" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372348408750" ignored="false" />
     <file path="/HomePageStepdefs.java" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372348535353" ignored="false" />
     <file path="/Search.feature" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372349702192" ignored="false" />
-    <file path="/SearchStepdefs.java" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372349122724" ignored="false" />
+    <file path="/SearchStepdefs.java" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372350379156" ignored="false" />
     <file path="/SearchResults.java" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372348767912" ignored="false" />
+    <file path="/Search.java" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372350768456" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +106,7 @@
       <file leaf-file-name="Search.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/Search.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="13" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.0">
+            <state line="44" column="0" selection-start="1308" selection-end="1308" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,6 +123,17 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="WebDriverExtensions.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/automation/core/WebDriverExtensions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="30" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="HomePageStepdefs.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/automation/tests/AmazonUK/HomePageStepdefs.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -134,10 +145,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchStepdefs.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SearchStepdefs.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/automation/tests/AmazonUK/SearchStepdefs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="64" selection-start="1223" selection-end="1223" vertical-scroll-proportion="0.0">
+            <state line="44" column="22" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.95415473">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,7 +159,7 @@
       <file leaf-file-name="SearchResults.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/SearchResults.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="37" selection-start="697" selection-end="710" vertical-scroll-proportion="0.0">
+            <state line="25" column="14" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,10 +176,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Search.feature" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Search.feature" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/automation/tests/AmazonUK/Search.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="64" selection-start="636" selection-end="636" vertical-scroll-proportion="0.8452722">
+            <state line="18" column="64" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -197,17 +208,17 @@
         <option value="$PROJECT_DIR$/src/test/resources/automation/tests/GoogleTrader/Search.feature" />
         <option value="$PROJECT_DIR$/src/test/java/automation/tests/GoogleTrader/HomePageStepdefs.java" />
         <option value="$PROJECT_DIR$/src/test/java/automation/tests/ScreenCaptureHook.java" />
-        <option value="$PROJECT_DIR$/src/test/java/automation/core/WebDriverExtensions.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/automation/sites/GoogleTrader/AmazonUK/HomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/Search.java" />
         <option value="$PROJECT_DIR$/src/test/java/automation/tests/AmazonUK/HomePageStepdefs.java" />
         <option value="$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/SearchResults.java" />
         <option value="$PROJECT_DIR$/src/test/java/automation/tests/SharedDriver.java" />
         <option value="$PROJECT_DIR$/src/test/java/automation/tests/RunTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/automation/tests/AmazonUK/SearchStepdefs.java" />
         <option value="$PROJECT_DIR$/src/test/resources/automation/tests/AmazonUK/Search.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/automation/core/WebDriverExtensions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/Search.java" />
+        <option value="$PROJECT_DIR$/src/test/java/automation/tests/AmazonUK/SearchStepdefs.java" />
       </list>
     </option>
   </component>
@@ -507,6 +518,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="automation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -843,12 +858,16 @@
       <created>1372349034618</created>
       <updated>1372349034618</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="AMZN-01&#10; ------------&#10;visa interview tests">
+      <created>1372349770880</created>
+      <updated>1372349770880</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -864,7 +883,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25227273" sideWeight="0.6757679" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32423207" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32423207" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -943,7 +962,9 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/automation/core/WebDriverExtensions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="32" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -955,13 +976,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/automation/tests/ScreenCaptureHook.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="54" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automation/core/WebDriverExtensions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="11" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -983,15 +997,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="33" selection-start="8" selection-end="33" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/Search.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="13" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1028,15 +1033,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/SearchResults.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="37" selection-start="697" selection-end="710" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automation/tests/RunTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="36" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
@@ -1044,19 +1040,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automation/tests/AmazonUK/SearchStepdefs.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/automation/tests/AmazonUK/Search.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="64" selection-start="1223" selection-end="1223" vertical-scroll-proportion="0.0">
+        <state line="18" column="64" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/SearchResults.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="14" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/automation/tests/AmazonUK/Search.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/automation/core/WebDriverExtensions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="64" selection-start="636" selection-end="636" vertical-scroll-proportion="0.8452722">
-          <folding />
+        <state line="27" column="30" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/Search.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="1308" selection-end="1308" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/automation/tests/AmazonUK/SearchStepdefs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="22" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.95415473">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
