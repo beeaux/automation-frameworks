@@ -1,7 +1,7 @@
 Theory Assessment
 
 1. Explain how the role of a tester is different between Agile and Waterfall development environments.
-
+  In agile methodology, the tester is 
 
 2. List important criteria to consider when deciding which test cases/scenarios should be automated.
   a. The use of static content to assert test results
@@ -24,3 +24,6 @@ Theory Assessment
   f. build should not be left broken
 
 6. Given you have a mobile application that handles sensitive data and financial transactions, and that the application must work on 25+ combinations of operating systems and browsers, across multiple locales and you are using an iterative development approach, what overall test strategy would you apply to keep your regression test defect detection rate low?
+  The 
+  
+  
