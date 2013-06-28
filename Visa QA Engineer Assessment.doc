@@ -3,7 +3,12 @@ Theory Assessment
 1. Explain how the role of a tester is different between Agile and Waterfall development environments.
 
 
-2. List important criteria to consider when deciding which test cases/scenarios should be automated
+2. List important criteria to consider when deciding which test cases/scenarios should be automated.
+  a. The use of static content to assert test results
+  b. User interface architecture of the application under test, i.e. are element locators well defined.
+  c. Frequency of dynamic elements within the application, i.e. are element id dynamically generated.
+  d. How heavily AJAX reliance is the application to ensure test brittleness is minimised.
+  e. Test framework architecture
 
 
 3. Regression testing is an activity that is sometimes carried out at the end of a development/testing cycle. When else would you expect to execute regression testing apart from immediately before release?
