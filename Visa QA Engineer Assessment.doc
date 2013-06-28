@@ -1,0 +1,18 @@
+Theory Assessment
+
+1. Explain how the role of a tester is different between Agile and Waterfall development environments.
+
+
+2. List important criteria to consider when deciding which test cases/scenarios should be automated
+
+
+3. Regression testing is an activity that is sometimes carried out at the end of a development/testing cycle. When else would you expect to execute regression testing apart from immediately before release?
+
+
+4. Your team has started a sprint and, while designing your tests for a user story, you realise that part of a requirement is missing or there are some edge cases that nobody had thought of so far. What would you do?
+
+
+5. What engineering practices would you encourage developers to engage in to help improve the overall quality of the system they are building?
+
+
+6. Given you have a mobile application that handles sensitive data and financial transactions, and that the application must work on 25+ combinations of operating systems and browsers, across multiple locales and you are using an iterative development approach, what overall test strategy would you apply to keep your regression test defect detection rate low?
