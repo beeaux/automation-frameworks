@@ -12,7 +12,7 @@ Feature: Search
     And there are search results displayed
 
   Scenario: verify that the price of the first result matches user's input
-    Then the price of the first result should be £295.00
+    Then the price of the first result should be £297.00
 
   Scenario: print out number of results found and assert the price of the last result
     Then the number of results displayed should be more than 0

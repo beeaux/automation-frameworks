@@ -10,31 +10,33 @@ import static automation.core.WebDriverExtensions.findElementsByCssSelector;
 public class SearchResults {
   
   public static List<WebElement> Results() {
-    List<WebElement> results = findElementsByCssSelector(".list.results.apsList .prod.celwidget");
-    return results;
+    return findElementsByCssSelector(".prod.celwidget");
   }
   
-  /*
-  private static WebElement FirstResult() {
-    for(WebElement result : Results()) {
-      if(result.getAttribute("class").contains("fstRow")) {
-        return result;
-      }
+    public static WebElement FirstResult() {
+        return Results().get(0);
     }
-    return null;
-  }
-  */
-  
-  public static Integer NoOfResults() {
-    if(Results() == null) return null;
+
+    public static WebElement LastElement() {
+        return Results().get(NoOfResults() - 1);
+    }
+
+    public static Integer NoOfResults() {
+        if(Results() == null) return null;
     
-    return Results().size();
-  }
+        return Results().size();
+    }
+
+    public static String getElementID(WebElement element) {
+        return element.getAttribute("id");
+    }
   
-  public static String ItemPrice(String itemPos) {
-    WebElement element = findElementByCssSelector("#result_" + itemPos +" .newp .bld.lrg.red");
-    if(element == null) return null;
-    
-    return element.getText();
-  }
+    public static String ItemPrice(WebElement item) {
+        String id = getElementID(item);
+        if (id == null) return null;
+        WebElement element = findElementByCssSelector("#"+ id +" .newp .bld.lrg.red");
+        if(element == null) return null;
+
+        return element.getText();
+    }
 }

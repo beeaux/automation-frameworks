@@ -1,7 +1,7 @@
 Theory Assessment
 
 1. Explain how the role of a tester is different between Agile and Waterfall development environments.
-  In agile methodology, the tester's role involve been part of the end-to-end application development lifecycle from the on-set, while in waterfall involvement is not till later stages of the lifecycle. The tester is involved in the planning sessions to provide estimates/efforts, design test scenarios and ensuring acceptance criteria are met, while in waterfall, the tester is more confined to testing functions, such as drafting test cases and executing tests. Also the agile approach facilitate continuous communication between testers and developers rather than each unit working in silos as frequently observed in waterfall. Agile (scrum) events such as stand up, sprint planning, retrospective, etc provide the tester more visibility than in waterfall, which allows that tester to carry research and feasibility studies of test scenarios and technology trends to support his/her scope of work.
+  In agile methodology, the tester's role involve been part of the end-to-end application development lifecycle from the on-set, while in waterfall involvement is not till later stages of the lifecycle. The tester is involved in the planning sessions to provide estimates/efforts, design test scenarios and ensuring acceptance criteria are met, while in waterfall, the tester is more confined to testing functions, such as drafting test cases and executing tests. Also the agile approach facilitates continuous communication between testers and developers rather than each unit working in silos as frequently observed in waterfall. Agile (scrum) events such as stand up, sprint planning, retrospective, etc provide the tester more visibility than in waterfall, which allows that tester to carry research and feasibility studies of test scenarios and technology trends to support his/her scope of work.
 
 2. List important criteria to consider when deciding which test cases/scenarios should be automated.
   a. The use of static content to assert test results
@@ -13,22 +13,22 @@ Theory Assessment
   Execution of regression tests should be continuous part of the application development lifecycle, ideally this should be considered as a key stage within the iterative development approach. Preferably, whenever the development team checks in a code change, fixes or patches, the regression test should be automatically executed through a build system, provided the regression tests are automated (ideally using a headless browser).
 
 4. Your team has started a sprint and, while designing your tests for a user story, you realise that part of a requirement is missing or there are some edge cases that nobody had thought of so far. What would you do?
-  - Escalate the situation to the Scrum Master and discuss the possibility of pulling the current user story from the sprint and replacing with another story of similar points; and suggest re-estimating the user story during the next planning session. If the user story can't be pull, ideally will provide new estimates and suggest to the scrum team during next stand up meeting if any stories with less priority that can be pulled to accomodate the user story.
+  - Escalate the situation to the Scrum Master and discuss the possibility of pulling the current user story from the sprint and replacing with another story of similar points; and suggest re-estimating the user story during the next planning session. If the user story can't be pull, ideally will provide new estimates and suggest to the scrum team during next stand up meeting if any stories with less priority that can be pulled to accommodate the user story.
 
 5. What engineering practices would you encourage developers to engage in to help improve the overall quality of the system they are building?
-  a. Pair programming / pair code review and rotation of developement pair to facilitate knowledge sharing.
-  b. acceptance test-driven development and unit testing.
-  c. version control best practices, i.e. checking in code frequently, adding meaningful and concise description to check-in along with the name of the development pair.  
-  d. pairing with testers to execute parallel testing.
-  e. use of continuous integration build system.
-  f. build should not be left broken
+o Pair programming / pair code review and rotation of development pair to facilitate knowledge sharing.
+o Acceptance test-driven development and unit testing.
+o Version control best practices, i.e. checking in code frequently, adding meaningful and concise description to check-in along with the name of the development pair.  
+o Pairing with testers to execute parallel testing.
+o Using continuous integration build systems.
+o Build must never be left broken
 
 6. Given you have a mobile application that handles sensitive data and financial transactions, and that the application must work on 25+ combinations of operating systems and browsers, across multiple locales and you are using an iterative development approach, what overall test strategy would you apply to keep your regression test defect detection rate low?
-  - The overall test approach will involve priotising compatibility (locales, O/S and browsers) matrix according to business-critical acceptance criteria, i.e. how has the business grouped the compatibility tiers using MoSCoW, if none are defined, ideally liaise with the business and the analytics team to define such matrix. 
+  - The overall test approach will involve prioritising compatibility (locales, O/S and browsers) matrix according to business-critical acceptance criteria, i.e. how has the business grouped the compatibility tiers using MoSCoW, if none are defined, ideally liaise with the business and the analytics team to define such matrix. 
   
   In addition to the matrix, what technical challenges could impact the end-to-end test process, especially, where open-source technology is to be implemented, i.e. frequency of technology updates and releases, does the technology support the MUST-have compatibility tier. 
   
-  The test framework should be developed with an object-oriented approach and closely mirror the architecture of the application under test, as this will enable segregated testing where possible, i.e. the ability to test business logic independently of user interface, such as testing restful services and third-party APIs. The test strategy will include utilising tags to defined different test goals, such as api-testing to test api, functional for functional testing, user-web to test page layout and rendering, etc.
+  The test framework should be developed with an object-oriented approach and closely mirror the architecture of the application under test, as this will enable segregated testing where possible, i.e. the ability to test business logic independently of user interface, such as testing restful services and third-party APIs. The test strategy will include utilising tags to defined different test goals, such as api-testing to test APIs, functional for functional testing, user-web to test page layout and rendering, etc.
   
   Finally, to ensure that the overall strategy is successful, a defect review process must be implemented to sign-off what is actual application defect and what is an exception caused by the test framework. Defect should be promptly communicated to the development team and logged against the appropriate feature and scenario.
   

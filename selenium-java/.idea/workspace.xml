@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/Search.java" afterPath="$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/Search.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Visa QA Engineer Assessment.doc" afterPath="$PROJECT_DIR$/../Visa QA Engineer Assessment.doc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/automation/tests/AmazonUK/Search.feature" afterPath="$PROJECT_DIR$/src/test/resources/automation/tests/AmazonUK/Search.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/SearchResults.java" afterPath="$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/SearchResults.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automation/tests/AmazonUK/SearchStepdefs.java" afterPath="$PROJECT_DIR$/src/test/java/automation/tests/AmazonUK/SearchStepdefs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automation/core/WebDriverExtensions.java" afterPath="$PROJECT_DIR$/src/test/java/automation/core/WebDriverExtensions.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="selenium-java-automation.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372349761669" ignored="false" />
+    <file path="/Dummy.txt" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1381858771478" ignored="false" />
     <file path="/pom.xml" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372081040513" ignored="false" />
     <file path="/RunTests.java" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372349151539" ignored="false" />
     <file path="/SharedDriver.java" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372349274862" ignored="false" />
@@ -20,8 +21,8 @@
     <file path="/HomePage.java" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372348408750" ignored="false" />
     <file path="/HomePageStepdefs.java" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372348535353" ignored="false" />
     <file path="/Search.feature" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372349702192" ignored="false" />
-    <file path="/SearchStepdefs.java" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372350379156" ignored="false" />
-    <file path="/SearchResults.java" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372348767912" ignored="false" />
+    <file path="/SearchStepdefs.java" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372411864897" ignored="false" />
+    <file path="/SearchResults.java" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372411725611" ignored="false" />
     <file path="/Search.java" changelist="1bbcdfcc-8f3c-4918-9cfc-09baef1bf753" time="1372350768456" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +38,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -73,7 +75,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -87,9 +88,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="33" selection-start="8" selection-end="33" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,9 +106,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/Search.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="44" column="0" selection-start="1308" selection-end="1308" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,9 +124,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/automation/core/WebDriverExtensions.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="27" column="30" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,9 +133,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/automation/tests/AmazonUK/HomePageStepdefs.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="34" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -148,7 +141,7 @@
       <file leaf-file-name="SearchStepdefs.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/automation/tests/AmazonUK/SearchStepdefs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="22" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.95415473">
+            <state line="46" column="55" selection-start="1711" selection-end="1711" vertical-scroll-proportion="0.5397412">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,10 +152,8 @@
       <file leaf-file-name="SearchResults.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/SearchResults.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="14" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="12" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -179,7 +170,7 @@
       <file leaf-file-name="Search.feature" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/automation/tests/AmazonUK/Search.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="64" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
+            <state line="14" column="53" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -212,12 +203,12 @@
         <option value="$PROJECT_DIR$/src/test/java/automation/sites/GoogleTrader/AmazonUK/HomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/HomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/automation/tests/AmazonUK/HomePageStepdefs.java" />
-        <option value="$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/SearchResults.java" />
         <option value="$PROJECT_DIR$/src/test/java/automation/tests/SharedDriver.java" />
         <option value="$PROJECT_DIR$/src/test/java/automation/tests/RunTests.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/automation/tests/AmazonUK/Search.feature" />
         <option value="$PROJECT_DIR$/src/test/java/automation/core/WebDriverExtensions.java" />
         <option value="$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/Search.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/automation/tests/AmazonUK/Search.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/SearchResults.java" />
         <option value="$PROJECT_DIR$/src/test/java/automation/tests/AmazonUK/SearchStepdefs.java" />
       </list>
     </option>
@@ -266,7 +257,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -528,6 +518,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -558,123 +549,6 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="automation" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="Moments ago" ActionInfo="_Update">
-      <UpdatedFiles>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/test/java/automation/tests/HomePage</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/test/java/automation/tests/HomePageStepdefs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/test/java/automation/tests/Search</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/test/java/automation/tests/SearchResults</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/test/java/automation/tests/SearchStepdef</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/test/resources/automation/tests/Search</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with property conflicts" />
-          <option name="myStatusName" value="Will be merged with property conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
   </component>
   <component name="RunManager" selected="JUnit.RunTests">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -862,7 +736,11 @@
       <created>1372349770880</created>
       <updated>1372349770880</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="AMZN-01&#10; ------------&#10;visa interview tests">
+      <created>1372408807457</created>
+      <updated>1372408807457</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -877,16 +755,16 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25227273" sideWeight="0.6757679" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32423207" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32423207" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -962,9 +840,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/automation/core/WebDriverExtensions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="32" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -975,40 +851,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automation/tests/ScreenCaptureHook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="54" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="10" column="54" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automation/sites/GoogleTrader/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="25" selection-start="8" selection-end="25" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="25" selection-start="8" selection-end="25" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="31" selection-start="1160" selection-end="1160" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="26" column="31" selection-start="1160" selection-end="1160" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="33" selection-start="8" selection-end="33" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automation/tests/AmazonUK/HomePageStepdefs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="34" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,9 +894,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/automation/tests/GoogleTrader/Search.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="46" selection-start="112" selection-end="112" vertical-scroll-proportion="0.15769945">
-          <folding />
-        </state>
+        <state line="5" column="46" selection-start="112" selection-end="112" vertical-scroll-proportion="0.15769945" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automation/tests/RunTests.java">
@@ -1040,43 +904,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/automation/tests/AmazonUK/Search.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="64" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/SearchResults.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="14" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automation/core/WebDriverExtensions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="30" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/Search.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="0" selection-start="1308" selection-end="1308" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/automation/tests/AmazonUK/Search.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="53" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/automation/sites/AmazonUK/SearchResults.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automation/tests/AmazonUK/SearchStepdefs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="22" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.95415473">
+        <state line="46" column="55" selection-start="1711" selection-end="1711" vertical-scroll-proportion="0.5397412">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
