@@ -24,8 +24,15 @@ public class WebDriverHelpers extends SharedDriver{
 
     private static RemoteWebDriver WEB_DRIVER = SharedDriver.WEBDRIVER;
     private static Actions action = new Actions(current());
-    private static WebDriverWait wait = new WebDriverWait(current(), 10);
+    private static Wait<WebDriver> wait;
 
+    static {
+        wait = new FluentWait<WebDriver>(current())
+                .withTimeout(10, TimeUnit.SECONDS)
+                .pollingEvery(1, TimeUnit.SECONDS)
+                .ignoring(NoSuchElementException.class);
+    }
+    
     public static WebDriver current() {
         return WEB_DRIVER;
     }
@@ -33,16 +40,39 @@ public class WebDriverHelpers extends SharedDriver{
     /*
         Custom page element finders.
      */
-    public WebElement findElementByCssSelector(String css) {
-        return current().findElement(By.cssSelector(css));
+    public static WebElement findElementByCssSelector(String css) {
+        try {
+            WebElement element = current().findElement(By.cssSelector(css));
+            if(!isElementDisplayed(element)) return null;
+            return element;
+        } catch (NoSuchElementException err) {
+            throw new NoSuchElementException(err.getMessage());
+        } catch (StaleElementReferenceException err) {
+            throw new StaleElementReferenceException(err.getMessage());
+        }
     }
-
-    public Collection<WebElement> findElementsByCssSelector(String css) {
-        return current().findElements(By.cssSelector(css));
+    public static List<WebElement> findElementsByCssSelector(String css) {
+        try {
+            WebElement element = current().findElements(By.cssSelector(css));
+            if(!isElementDisplayed(element)) return null;
+            return element;
+        } catch (NoSuchElementException err) {
+            throw new NoSuchElementException(err.getMessage());
+        } catch (StaleElementReferenceException err) {
+            throw new StaleElementReferenceException(err.getMessage());
+        }
     }
 
     public WebElement findElementByLinkText(String link) {
-        return current().findElement(By.linkText(link));
+        try {
+            WebElement element = current().findElements(By.linkText(link));
+            if(!isElementDisplayed(element)) return null;
+            return element;
+        } catch (NoSuchElementException err) {
+            throw new NoSuchElementException(err.getMessage());
+        } catch (StaleElementReferenceException err) {
+            throw new StaleElementReferenceException(err.getMessage());
+        }
     }
 
     /*
@@ -96,7 +126,15 @@ public class WebDriverHelpers extends SharedDriver{
     public static void waitForElement(WebElement element) {
         if(wait.until(ExpectedConditions.visibilityOf(element)) != null) return;
     }
-
+    public static void waiter(WebElement _element) {
+        final WebElement element = _element;
+        wait.until(new Function<WebDriver, Object>() {
+            @Override
+            public Object apply(WebDriver _driver) {
+                return element;
+            }
+        });
+    }
     public static boolean isElementDisplayed(WebElement element) {
         return element.isDisplayed();
     }

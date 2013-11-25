@@ -10,5 +10,5 @@ Feature: Simple log in on the MS Hotmail page
 
     Examples:
     |Mail site|Account|username|password|State|
-    |Hotmail  |valid  |adebakre@hotmail.com|simisade81|logged in|
-    |Gmail    |valid  |adebakre@gmail.com  |mother07  |logged in|
+    |Hotmail  |valid  |test@hotmail.com|password|logged in|
+    |Gmail    |valid  |test@gmail.com  |password |logged in|
