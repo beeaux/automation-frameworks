@@ -1,4 +1,4 @@
-package automation.tests;
+package automation;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;

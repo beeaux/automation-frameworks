@@ -1,3 +1,5 @@
+package automation;
+
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -7,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.remote.Augmenter;
 
-import static automation.test.SharedDriver.SharedRemoteWebDriver;
+import static automation.SharedDriver.SharedRemoteWebDriver;
 
 public class ScenarioExtension {
     public static Scenario scenario;

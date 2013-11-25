@@ -1,4 +1,4 @@
-package automation.tests;
+package automation;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -20,8 +20,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import static automation.utils.CMDExecutor.runScript;
 import static java.lang.String.valueOf;
-import static lbg.arena.enhancedcontent.utils.CMDExecutor.runScript;
 import static org.openqa.selenium.firefox.FirefoxDriver.*;
 import static org.openqa.selenium.ie.InternetExplorerDriver.*;
 import static org.openqa.selenium.remote.CapabilityType.*;

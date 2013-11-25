@@ -1,7 +1,7 @@
-package automation.test.utils;
+package automation.utils;
 
 import java.io.IOException;
-import static automation.test.SharedDriver.getCurrentOS;
+import static automation.SharedDriver.getCurrentOS;
 
 public class CMDExecutor {
     private static String command = null;

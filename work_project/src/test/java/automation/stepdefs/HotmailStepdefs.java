@@ -1,8 +1,9 @@
 package automation.stepdefs;
 
-import automation.pageobjects.HotmailPage;
-import automation.tests.SharedDriver;
-import cucumber.annotation.en.*;
+import automation.pages.HotmailPage;
+import automation.SharedDriver;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import org.openqa.selenium.support.PageFactory;
 
 /**

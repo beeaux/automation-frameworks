@@ -1,8 +1,8 @@
 package automation.stepdefs;
 
-import automation.helpers.WebDriverHelpers;
-import automation.pageobjects.GoogleMailPage;
-import automation.tests.SharedDriver;
+import automation.utils.WebDriverExtension;
+import automation.pages.GoogleMailPage;
+import automation.SharedDriver;
 import org.openqa.selenium.support.PageFactory;
 
 /**
@@ -15,7 +15,7 @@ import org.openqa.selenium.support.PageFactory;
 public class globalStepDefs {
 
     private SharedDriver Driver;
-    WebDriverHelpers webPageHelper = new WebDriverHelpers();
+    WebDriverExtension webPageHelper = new WebDriverExtension();
     private GoogleMailPage page;
     //private PlugNEdit page;
 

@@ -1,12 +1,12 @@
 package automation.stepdefs;
 
-import automation.helpers.WebDriverHelpers;
-import automation.pageobjects.GoogleMailPage;
-import automation.pageobjects.HotmailPage;
-import automation.tests.SharedDriver;
-import cucumber.annotation.en.And;
-import cucumber.annotation.en.Given;
-import cucumber.annotation.en.When;
+import automation.utils.WebDriverExtension;
+import automation.pages.GoogleMailPage;
+import automation.pages.HotmailPage;
+import automation.SharedDriver;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
 import org.openqa.selenium.support.PageFactory;
 
 /**
@@ -19,7 +19,7 @@ import org.openqa.selenium.support.PageFactory;
 public class emailLogInStepDef {
 
     private SharedDriver Driver;
-    WebDriverHelpers webPageHelper = new WebDriverHelpers();
+    WebDriverExtension webPageHelper = new WebDriverExtension();
     private GoogleMailPage googlepage;
     private HotmailPage hotmailpage;
 

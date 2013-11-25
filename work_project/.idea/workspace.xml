@@ -2,77 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="767464a4-17a0-422e-8baf-244b91181aa2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/src/test/resources/automation/tests/GoogleSearch.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__cglib_cglib_nodep_2_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__com_google_guava_guava_14_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__info_cukes_cucumber_core_1_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__info_cukes_cucumber_html_0_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__info_cukes_cucumber_java_1_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__info_cukes_cucumber_junit_1_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__info_cukes_cucumber_picocontainer_1_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__io_netty_netty_3_5_2_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__junit_junit_4_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__net_java_dev_jna_jna_3_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__net_java_dev_jna_platform_3_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__net_sourceforge_nekohtml_nekohtml_1_9_18.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_apache_commons_commons_exec_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_8_1_9_v20130131.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_8_1_9_v20130131.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_8_1_9_v20130131.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_eclipse_jetty_jetty_websocket_8_1_9_v20130131.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_json_json_20080701.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_android_driver_2_32_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_2_32_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_2_32_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_2_32_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_htmlunit_driver_2_32_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_2_32_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_iphone_driver_2_32_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_2_32_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_2_32_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_2_32_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_2_32_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__org_webbitserver_webbit_0_4_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__xalan_serializer_2_7_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__xalan_xalan_2_7_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__xerces_xercesImpl_2_10_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/src/test/java/automation/tests/RunTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/src/test/java/automation/tests/ScreenCaptureHook.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/src/test/java/automation/tests/SharedDriver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/src/test/java/automation/core/WebDriverExtensions.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/gradle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/selenium-java-automation.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-java/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../selenium-automation/selenium/.gitignore" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__com_google_guava_guava_14_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__commons_codec_commons_codec_1_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__info_cukes_cucumber_core_1_0_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__info_cukes_cucumber_html_0_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__info_cukes_cucumber_java_1_0_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__info_cukes_cucumber_junit_1_0_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__info_cukes_cucumber_picocontainer_1_0_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__info_cukes_gherkin_2_11_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__junit_junit_4_10.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__net_sourceforge_cssparser_cssparser_0_9_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__net_sourceforge_htmlunit_htmlunit_2_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__net_sourceforge_nekohtml_nekohtml_1_9_18.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_apache_httpcomponents_httpclient_4_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_apache_httpcomponents_httpcore_4_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_apache_httpcomponents_httpmime_4_2_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_eclipse_jetty_jetty_http_8_1_9_v20130131.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_eclipse_jetty_jetty_io_8_1_9_v20130131.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_eclipse_jetty_jetty_util_8_1_9_v20130131.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_eclipse_jetty_jetty_websocket_8_1_9_v20130131.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_hamcrest_hamcrest_core_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_picocontainer_picocontainer_2_14_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_seleniumhq_selenium_selenium_android_driver_2_32_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_seleniumhq_selenium_selenium_api_2_32_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_seleniumhq_selenium_selenium_chrome_driver_2_32_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_seleniumhq_selenium_selenium_firefox_driver_2_32_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_seleniumhq_selenium_selenium_htmlunit_driver_2_32_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_seleniumhq_selenium_selenium_ie_driver_2_32_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_seleniumhq_selenium_selenium_iphone_driver_2_32_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_seleniumhq_selenium_selenium_java_2_32_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_seleniumhq_selenium_selenium_remote_driver_2_32_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_seleniumhq_selenium_selenium_safari_driver_2_32_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__org_seleniumhq_selenium_selenium_support_2_32_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\.idea\libraries\Maven__xerces_xercesImpl_2_10_0.xml" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\src\test\java\automation\helpers\CMDExecutor.java" afterPath="$PROJECT_DIR$/src/test/java/automation/utils/CMDExecutor.java" />
+      <change type="MOVED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\src\test\java\automation\helpers\WebDriverExtension.java" afterPath="$PROJECT_DIR$/src/test/java/automation/utils/WebDriverExtension.java" />
+      <change type="MOVED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\src\test\java\automation\pageobjects\GoogleMailPage.java" afterPath="$PROJECT_DIR$/src/test/java/automation/pages/GoogleMailPage.java" />
+      <change type="MOVED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\src\test\java\automation\pageobjects\HotmailPage.java" afterPath="$PROJECT_DIR$/src/test/java/automation/pages/HotmailPage.java" />
+      <change type="MOVED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\src\test\java\automation\tests\RunTest.java" afterPath="$PROJECT_DIR$/src/test/java/automation/RunTests.java" />
+      <change type="MOVED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\src\test\java\automation\tests\ScenarioExtension.java" afterPath="$PROJECT_DIR$/src/test/java/automation/ScenarioExtension.java" />
+      <change type="MOVED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\src\test\java\automation\tests\SharedDriver.java" afterPath="$PROJECT_DIR$/src/test/java/automation/SharedDriver.java" />
+      <change type="MOVED" beforePath="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\src\test\resources\automation\tests\EmailLogInSample.feature" afterPath="$PROJECT_DIR$/src/test/resources/automation/stepdefs/EmailLogInSample.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automation/stepdefs/HotmailStepdefs.java" afterPath="$PROJECT_DIR$/src/test/java/automation/stepdefs/HotmailStepdefs.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automation/stepdefs/emailLogInStepDef.java" afterPath="$PROJECT_DIR$/src/test/java/automation/stepdefs/emailLogInStepDef.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automation/stepdefs/globalStepDefs.java" afterPath="$PROJECT_DIR$/src/test/java/automation/stepdefs/globalStepDefs.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workproject.iml" afterPath="$PROJECT_DIR$/workproject.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="work_project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1369220294424" ignored="false" />
-    <file path="/pom.xml" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1369155566940" ignored="false" />
-    <file path="/SharedDriver.java" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1369225176940" ignored="false" />
+    <file path="/Dummy.txt" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1385393083414" ignored="false" />
+    <file path="/pom.xml" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1385392634448" ignored="false" />
+    <file path="/SharedDriver.java" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1385392741174" ignored="false" />
     <file path="/WebDriverHelpers.java" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1368400259382" ignored="false" />
     <file path="/GoogleMailPage.java" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1368392365330" ignored="false" />
     <file path="/HotmailPage.java" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1368400150888" ignored="false" />
@@ -80,13 +65,14 @@
     <file path="/globalStepDefs.java" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1368384565679" ignored="false" />
     <file path="/EmailLogInSample.feature" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1368402030120" ignored="false" />
     <file path="/emailLogInStepDef.java" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1368391518174" ignored="false" />
-    <file path="/fragment.java" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1368401717016" ignored="false" />
+    <file path="/fragment.java" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1385393083414" ignored="false" />
     <file path="/ReadMe.txt" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1368399131325" ignored="false" />
     <file path="/HotmailStepdefs.java" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1368401231571" ignored="false" />
     <file path="/RunTests.java" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1369068974768" ignored="false" />
     <file path="/ScreenCaptureHook.java" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1369077895466" ignored="false" />
     <file path="/.gitignore" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1369227933011" ignored="false" />
     <file path="/WebDriverExtensions.java" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1369236653930" ignored="false" />
+    <file path="/WebDriverExtension.java" changelist="767464a4-17a0-422e-8baf-244b91181aa2" time="1385392984392" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +87,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -138,7 +124,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -148,50 +134,85 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WebDriverHelpers.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/automation/helpers/WebDriverHelpers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="17" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RunCukesTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/automation/tests/RunCukesTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="69" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SharedDriver.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/automation/tests/SharedDriver.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/automation/SharedDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="0" selection-start="4103" selection-end="4222" vertical-scroll-proportion="0.0">
+            <state line="16" column="0" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebDriverExtension.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/automation/utils/WebDriverExtension.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="62" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="method#setWebDriverToFirefox#0;class#SharedDriver#0" expanded="false" />
-                <element signature="method#setWebDriverToChrome#0;class#SharedDriver#0" expanded="false" />
+                <element signature="e#4235#4401#0" expanded="true" />
+                <element signature="e#4390#4391#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="ScenarioExtension.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/automation/ScenarioExtension.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="5" selection-start="127" selection-end="127" vertical-scroll-proportion="0.40881765">
+            <state line="11" column="25" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmailLogInSample.feature" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/automation/tests/EmailLogInSample.feature">
+      <file leaf-file-name="RunTests.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/automation/RunTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="39" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+            <state line="10" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailLogInSample.feature" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/automation/stepdefs/EmailLogInSample.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="39" selection-start="326" selection-end="326" vertical-scroll-proportion="0.27377522">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HotmailStepdefs.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/automation/stepdefs/HotmailStepdefs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="5" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="emailLogInStepDef.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/automation/stepdefs/emailLogInStepDef.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="6" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HotmailPage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/automation/pages/HotmailPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="2" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -199,7 +220,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="83" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
+            <state line="108" column="27" selection-start="4170" selection-end="4170" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -223,22 +244,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/automation/utilities/SharedDriver.java" />
-        <option value="$PROJECT_DIR$/src/test/java/automation/stepdefs/globaldefinitions.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/EmailLogInSample.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/automation/utilities/runCukes.java" />
-        <option value="$PROJECT_DIR$/src/test/java/automation/stepdefs/globalStepDefs.java" />
-        <option value="$PROJECT_DIR$/src/test/java/automation/pageobjects/GoogleMailPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/automation/utilities/RunCukesTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/ReadMe.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/test/java/automation/helpers/WebDriverHelpers.java" />
         <option value="$PROJECT_DIR$/src/test/java/automation/tests/RunCukesTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/automation/stepdefs/emailLogInStepDef.java" />
         <option value="$PROJECT_DIR$/src/test/java/automation/pageobjects/HotmailPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/automation/stepdefs/HotmailStepdefs.java" />
         <option value="$PROJECT_DIR$/src/test/resources/automation/tests/EmailLogInSample.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/automation/tests/SharedDriver.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/automation/SharedDriver.java" />
+        <option value="$PROJECT_DIR$/src/test/java/automation/utils/CMDExecutor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/automation/utils/WebDriverExtension.java" />
+        <option value="$PROJECT_DIR$/src/test/java/automation/ScenarioExtension.java" />
+        <option value="$PROJECT_DIR$/src/test/java/automation/stepdefs/HotmailStepdefs.java" />
+        <option value="$PROJECT_DIR$/src/test/java/automation/stepdefs/emailLogInStepDef.java" />
+        <option value="$PROJECT_DIR$/src/test/java/automation/pages/HotmailPage.java" />
       </list>
     </option>
   </component>
@@ -260,14 +281,16 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="683" />
-    <option name="height" value="728" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="false" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
     <OptionsSetting value="true" id="Undo Check Out" />
@@ -291,7 +314,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -350,6 +372,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stepdefs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="work_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="work_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -360,6 +408,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -369,7 +418,7 @@
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wgsn" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -377,20 +426,23 @@
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Gabak Services\Documents\GitHub\automation-frameworks\work_project\src\test\resources" />
       <recent name="C:\Users\Gabak Services\Documents\GitHub\automation-frameworks\work_project\src\test\resources\drivers" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="automation" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Yomi Folami\Documents\GitHub\automation-frameworks\work_project\src\test\resources\automation\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RunCukesTest">
+  <component name="RunManager" selected="JUnit.RunTests">
     <configuration default="false" name="Feature: EmailLogInSample" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -457,17 +509,20 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="GLUE" />
       <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -498,20 +553,17 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="GLUE" />
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
       <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -565,10 +617,34 @@
       <envs />
       <method />
     </configuration>
-    <list size="3">
+    <configuration default="false" name="RunTests" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="workproject" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="automation" />
+      <option name="MAIN_CLASS_NAME" value="automation.RunTests" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea -Dbrowser=chrome -DcaptureScreenshot= " />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.RunCode" />
       <item index="1" class="java.lang.String" itemvalue="Cucumber java.Feature: EmailLogInSample" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.RunCukesTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RunTests" />
     </list>
     <recent_temporary>
       <list size="2">
@@ -629,8 +705,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="683" height="728" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -640,19 +716,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32767403" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32767403" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52012885" sideWeight="0.6712095" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23484848" sideWeight="0.67235494" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32764506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -728,22 +804,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/automation/tests/SharedDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="47" selection-start="2155" selection-end="2155" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="method#setWebDriverToFirefox#0;class#SharedDriver#0" expanded="false" />
-            <element signature="method#setWebDriverToChrome#0;class#SharedDriver#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automation/stepdefs/globalStepDefs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/automation/tests/EmailLogInSample.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/automation/stepdefs/EmailLogInSample.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="81" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
           <folding />
@@ -755,7 +816,7 @@
         <state line="43" column="33" selection-start="1225" selection-end="1244" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automation/pageobjects/GoogleMailPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/automation/pages/GoogleMailPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="14" selection-start="758" selection-end="758" vertical-scroll-proportion="0.620438" />
       </provider>
@@ -770,64 +831,90 @@
         <state line="27" column="0" selection-start="784" selection-end="784" vertical-scroll-proportion="0.71757925" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automation/helpers/WebDriverHelpers.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="17" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automation/stepdefs/emailLogInStepDef.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="16" selection-start="1223" selection-end="1223" vertical-scroll-proportion="1.0570652" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automation/stepdefs/HotmailStepdefs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automation/pageobjects/HotmailPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="609" selection-end="609" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/automation/tests/EmailLogInSample.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="39" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+        <state line="12" column="5" selection-start="138" selection-end="138" vertical-scroll-proportion="0.36298934">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="83" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
+        <state line="108" column="27" selection-start="4170" selection-end="4170" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automation/tests/RunCukesTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/automation/utils/CMDExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="69" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+        <state line="3" column="25" selection-start="80" selection-end="80" vertical-scroll-proportion="0.090747334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automation/tests/SharedDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/automation/ScenarioExtension.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="4103" selection-end="4222" vertical-scroll-proportion="0.0">
+        <state line="11" column="25" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/automation/utils/WebDriverExtension.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="62" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="method#setWebDriverToFirefox#0;class#SharedDriver#0" expanded="false" />
-            <element signature="method#setWebDriverToChrome#0;class#SharedDriver#0" expanded="false" />
+            <element signature="e#4235#4401#0" expanded="true" />
+            <element signature="e#4390#4391#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/test/java/automation/SharedDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="5" selection-start="127" selection-end="127" vertical-scroll-proportion="0.40881765">
+        <state line="16" column="0" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/automation/RunTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/automation/stepdefs/HotmailStepdefs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="5" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/automation/stepdefs/emailLogInStepDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="6" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/automation/pages/HotmailPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="2" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/automation/stepdefs/EmailLogInSample.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="39" selection-start="326" selection-end="326" vertical-scroll-proportion="0.27377522">
           <folding />
         </state>
       </provider>
