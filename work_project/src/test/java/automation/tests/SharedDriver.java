@@ -1,194 +1,249 @@
 package automation.tests;
 
-import cucumber.annotation.After;
-import cucumber.annotation.Before;
-import cucumber.runtime.ScenarioResult;
-import org.openqa.selenium.OutputType;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.service.DriverService;
+import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.support.events.AbstractWebDriverEventListener;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
-import java.io.ByteArrayInputStream;
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Gabak Services
- * Date: 12/05/13
- * Time: 16:00
- * To change this template use File | Settings | File Templates.
- */
+import static java.lang.String.valueOf;
+import static lbg.arena.enhancedcontent.utils.CMDExecutor.runScript;
+import static org.openqa.selenium.firefox.FirefoxDriver.*;
+import static org.openqa.selenium.ie.InternetExplorerDriver.*;
+import static org.openqa.selenium.remote.CapabilityType.*;
+
 public class SharedDriver extends EventFiringWebDriver {
-
-    protected static RemoteWebDriver WEBDRIVER;
+    public static RemoteWebDriver SharedRemoteWebDriver;
     private static DesiredCapabilities capabilities;
-    private static DriverService driver;
+    private static DriverService driver_service;
 
-    public static String url = System.getProperty("url");   // gets user-defined url through Maven config.
-    public static String browser = System.getProperty("browser");   // gets user-defined browser through Maven config.
-    public static String bitOS = System.getProperty("os.arch");
-    private static String directory = System.getProperty("user.dir");
-    private static String drivers = directory
-            + File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "drivers";
+    //configurable parameters
+    public static String browser = System.getProperty("browser");
+    private static String os_arch = System.getProperty("os.arch");
+    public static Platform current_platform = Platform.getCurrent();
+    private static String localhost = "http://localhost:5555/wd/hub";
 
-    private static String platform = Platform.getCurrent().name();
-    private static  String chromedriver = "chromedriver";
-    private static String iedriverserver = "IEDriverServer";
+    // directories & drivers
+    private static String user_directory = System.getProperty("user.dir");
+    private static String resources_directory = user_directory + File.separator +"src" + File.separator
+            + "test" + File.separator + "resources";
+    private static String drivers_directory = resources_directory + File.separator + "drivers";
+    private static String chrome_driver = "chromedriver";
+    private static String ie_driver = "IEDriverServer";
+    private static String phantomjs_driver = "phantomjs";
+    private static String standalone_server_jar = "java -jar " + drivers_directory + File.separator + "selenium_server_standalone.jar";
 
-    private static final Thread CLOSE_THREAD = new Thread() {
+    /*
+        app urls
+        vita-1 | https://vita1-arena.lloydsbanking.com/arena/html
+        localhost | https://localhost/ePortalStrategicMain.Web/arena/html
+
+     */
+    // constructor
+    public SharedDriver() {
+        super(SharedRemoteWebDriver);
+        manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        manage().window().maximize();
+    }
+
+    private static final Thread CloseThread = new Thread() {
         @Override
         public void run() {
-            WEBDRIVER.close();
+            SharedRemoteWebDriver.close();
         }
     };
 
-    static {
-        if(browser.equalsIgnoreCase("chrome")) {
-            /*
-                dynamically assigns chrome driver by identifying operating system
-                and bit architecture.
-             */
-            if(platform.equalsIgnoreCase("mac")) {
-                chromedriver = chromedriver + "_mac" + File.separator + chromedriver;
-            } else if(platform.equalsIgnoreCase("linux") || platform.equalsIgnoreCase("unix")) {
-                if(bitOS.contains("64")) {
-                    chromedriver = chromedriver + "_linux64" + File.separator + chromedriver;
-                } else {
-                    chromedriver = chromedriver + "_linux32" + File.separator + chromedriver;
-                }
-            } else {
-                chromedriver = chromedriver + "_win" + File.separator + chromedriver + ".exe";
-            }
-
-            setWebDriverToChrome();
-        } else if(browser.equalsIgnoreCase("ie") || browser.equalsIgnoreCase("internetexplorer")) {
-            /*
-                dynamically assigns ie driver by identifying operating system
-                and bit architecture.
-                Prints out exception if operating system or platform is not Windows.
-             */
-            if(platform.contains("win") || platform.equalsIgnoreCase("xp") || platform.equalsIgnoreCase("vista")) {
-                if(bitOS.contains("64")) {
-                    iedriverserver = iedriverserver + "_x64" + File.separator + iedriverserver + ".exe";
-                }   else {
-                    iedriverserver = iedriverserver + "_Win32" + File.separator + iedriverserver + ".exe";
-                }
-            } else {
-                System.err.println("Assigned browser {" + browser + "} is not supported on " + platform);
-            }
-
-            setWebDriverToIE();
-        } else {
-            // set as default browser if user-defined value does not match.
-            setWebDriverToFirefox();
-        }
-
-        // shuts down web driver instance or thread.
-        Runtime.getRuntime().addShutdownHook(CLOSE_THREAD);
-    }
-
-    // sets web driver instance to firefox
-    private static void setWebDriverToFirefox() {
-        capabilities = DesiredCapabilities.firefox();
-        capabilities.setCapability(String.valueOf(FirefoxDriver.DEFAULT_ENABLE_NATIVE_EVENTS), true);
-
-        //FirefoxProfile profile = new FirefoxProfile();
-        WEBDRIVER = new FirefoxDriver(capabilities);
-    }
-
-    // sets web driver instance to ie
-    private static void setWebDriverToIE() {
-        String pathway = drivers + File.separator + "ie" + File.separator + iedriverserver;        // IE driver server directory.
-        driver  = new InternetExplorerDriverService.Builder()
-                .usingDriverExecutable(new File(pathway))
-                .usingAnyFreePort()
-                .build();
-
-        try {
-            driver.start();
-        } catch (Exception err) {
-            System.err.println(err.getMessage());
-        }
-
-        capabilities = DesiredCapabilities.internetExplorer();
-        capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
-        WEBDRIVER = new RemoteWebDriver(driver.getUrl(), capabilities);
-    }
-
-    // sets web driver instance to chrome.
-    private static void setWebDriverToChrome() {
-        String pathway = drivers + File.separator + "chrome" + File.separator + chromedriver;     // Chrome driver server directory.
-        driver = new ChromeDriverService.Builder()
-                .usingDriverExecutable(new File(pathway))
-                .usingAnyFreePort()
-                .build();
-
-        try {
-            driver.start();
-        } catch (Exception err) {
-            System.err.println(err.getMessage());
-        }
-
-        capabilities = DesiredCapabilities.chrome();
-        WEBDRIVER = new RemoteWebDriver(driver.getUrl(), capabilities);
-    }
-
-    // constructor
-    public SharedDriver() {
-        super(WEBDRIVER);
-        manage().window().maximize();   // maximize browser window
-        manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);   // sets implicit wait time to 10s
-    }
-
     @Override
     public void close() {
-        if(Thread.currentThread() != CLOSE_THREAD) {
-            throw new UnsupportedOperationException("");
-        }
+        if(Thread.currentThread() != CloseThread)
+            throw new UnsupportedOperationException("Warning - don't close WebDriver. It's shared and will close when JVM exits.");
+        super.close();
     }
 
-    /*
-        deletes all cookies before execution
-     */
     @Before
     public void deleteAllCookies() {
         manage().deleteAllCookies();
     }
 
-    /*
-        Embeds screenshot on exception or failure.
-        current support issue with Chrome.
-     */
     @After
-    public void registerWebDriverEventListener(final ScenarioResult scenario) {
+    public void registerWebDriverEventListener(final Scenario scenario) {
         register(new AbstractWebDriverEventListener() {
             @Override
             public void onException(Throwable throwable, WebDriver driver) {
-                embedScreenshot(scenario);
+                super.onException(throwable, driver);
             }
         });
     }
 
-    /*
-        Captures and embed screenshot as png file.
-     */
-    //@After
-    public void embedScreenshot(ScenarioResult scenario) {
-        try {
-            byte[] screenshot = this.getScreenshotAs(OutputType.BYTES);
-            scenario.embed(new ByteArrayInputStream(screenshot), "image/png");
-        } catch (WebDriverException err) {
-            System.err.println(err.getMessage());
+    public static String getCurrentOS() {
+        String os = null;
+        if (Platform.MAC.is(current_platform)) {
+            os = "MAC";
+        }  else if (Platform.LINUX.is(current_platform) || Platform.UNIX.is(current_platform)) {
+            os = "LINUX";
+        }  else if (Platform.WIN8.is(current_platform) || Platform.WINDOWS.is(current_platform) || Platform.XP.is(current_platform) || Platform.VISTA.is(current_platform)) {
+            os = "WIN";
+        }   else if (Platform.ANDROID.is(current_platform)) {
+            os = "ANDROID";
         }
+        return os;
+    }
+
+    /*
+
+     */
+     static {
+          /*
+
+           */
+        if (browser.equalsIgnoreCase("firefox") || browser.equalsIgnoreCase("safari")) {
+            String _string = standalone_server_jar + " -role hub";
+            runScript(_string);
+
+            _string = standalone_server_jar + " -role node -hub http://localhost:4444/grid/register";
+            runScript(_string);
+        }
+
+        if (browser.equalsIgnoreCase("firefox")) {
+            try {
+                setSharedRemoteWebDriverToFirefox();
+            } catch (MalformedURLException err) {
+                err.printStackTrace();
+            }
+        } else if (browser.equalsIgnoreCase("ie")) {
+            if (getCurrentOS().equalsIgnoreCase("win")) {
+                if (os_arch.contains("64"))
+                    ie_driver = ie_driver + "_x64" + File.separator + ie_driver + ".exe";
+                else
+                    ie_driver = ie_driver + "_Win32" + File.separator + ie_driver + ".exe";
+
+                try {
+                    setSharedRemoteWebDriverToIE();
+                } catch (MalformedURLException err) {
+                    err.printStackTrace();
+                }
+            } else {
+                throw new IllegalStateException(browser + " is not supported on " + getCurrentOS());
+            }
+        } else if (browser.equalsIgnoreCase("chrome")){
+            if(getCurrentOS().equalsIgnoreCase("MAC")) {
+                chrome_driver = chrome_driver + "_mac" + File.separator + chrome_driver;
+            } else if(getCurrentOS().equalsIgnoreCase("LINUX")) {
+                if(os_arch.contains("64")) {
+                    chrome_driver = chrome_driver + "_linux64" + File.separator + chrome_driver;
+                } else {
+                    chrome_driver = chrome_driver + "_linux32" + File.separator + chrome_driver;
+                }
+            } else {
+                chrome_driver = chrome_driver + "_win" + File.separator + chrome_driver + ".exe";
+            }
+
+            try {
+                setSharedRemoteWebDriverToChrome();
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            }
+        } else if (browser.equalsIgnoreCase("safari")) {
+            try {
+                setSharedRemoteWebDriverToSafari();
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            }
+        } else if (browser.isEmpty() || browser.equalsIgnoreCase("phantomjs")){
+            if (getCurrentOS().equalsIgnoreCase("win")) {
+                phantomjs_driver = phantomjs_driver + "_win" + File.separator + phantomjs_driver + ".exe";
+            } else if(getCurrentOS().equalsIgnoreCase("mac")) {
+                phantomjs_driver = phantomjs_driver + "_mac" + File.separator + phantomjs_driver;
+            }  else {
+                if (os_arch.contains("64"))
+                    phantomjs_driver = phantomjs_driver + "_linux64" + File.separator + phantomjs_driver;
+                else
+                    phantomjs_driver = phantomjs_driver + "_linux32" + File.separator + phantomjs_driver;
+            }
+
+            try {
+                setSharedRemoteWebDriverToPhantomJS();
+            } catch (MalformedURLException err) {
+                err.printStackTrace();
+            }
+        }
+
+        //  shuts down remote web driver thread.
+        Runtime.getRuntime().addShutdownHook(CloseThread);
+    }
+
+    private static void setSharedRemoteWebDriverToSafari() throws MalformedURLException {
+        capabilities = DesiredCapabilities.safari();
+        //capabilities.setCapability(SafariOptions.CAPABILITY, );
+        setAdditionalCapabilities();
+
+        SharedRemoteWebDriver = new RemoteWebDriver(new URL(localhost), capabilities);
+    }
+
+    private static void setSharedRemoteWebDriverToPhantomJS() throws MalformedURLException {
+    }
+
+    private static void setSharedRemoteWebDriverToChrome() throws MalformedURLException {
+        driver_service = new ChromeDriverService.Builder()
+                .usingDriverExecutable(new File(drivers_directory + File.separator + "chrome" + File.separator + chrome_driver))
+                .usingAnyFreePort()
+                .build();
+        try {
+            driver_service.start();
+        } catch (Exception err) {
+            throw new IllegalStateException(err.getMessage());
+        }
+
+        capabilities = DesiredCapabilities.chrome();
+        setAdditionalCapabilities();
+
+        SharedRemoteWebDriver = new RemoteWebDriver(driver_service.getUrl(), capabilities);
+    }
+
+    private static void setSharedRemoteWebDriverToIE() throws MalformedURLException {
+        driver_service = new InternetExplorerDriverService.Builder()
+                .usingDriverExecutable(new File(drivers_directory + File.separator + "ie" + File.separator + ie_driver))
+                .usingAnyFreePort()
+                .build();
+        try {
+            driver_service.start();
+        } catch (Exception err) {
+            throw new IllegalStateException(err.getMessage());
+        }
+
+        capabilities = DesiredCapabilities.internetExplorer();
+        capabilities.setCapability(INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+        setAdditionalCapabilities();
+
+        SharedRemoteWebDriver = new RemoteWebDriver(driver_service.getUrl(), capabilities);
+    }
+
+    private static void setSharedRemoteWebDriverToFirefox() throws MalformedURLException {
+        capabilities = DesiredCapabilities.firefox();
+        capabilities.setCapability(valueOf(DEFAULT_ENABLE_NATIVE_EVENTS), true);
+        capabilities.setCapability(BINARY, System.getProperty("webdriver.firefox.bin"));
+        setAdditionalCapabilities();
+
+        SharedRemoteWebDriver = new RemoteWebDriver(new URL("http://localhost:5555/wd/hub/"), capabilities);
+    }
+
+    private static void setAdditionalCapabilities() {
+        capabilities.setJavascriptEnabled(true);
+        capabilities.setCapability(ACCEPT_SSL_CERTS, true);
+        capabilities.setCapability(TAKES_SCREENSHOT, true);
     }
 }
