@@ -22,7 +22,7 @@ import java.util.Collection;
  */
 public class WebDriverHelpers extends SharedDriver{
 
-    private static RemoteWebDriver WEB_DRIVER = SharedDriver.WEBDRIVER;
+    private static RemoteWebDriver Driver = SharedDriver.SharedRemoteWebDriver;
     private static Actions action = new Actions(current());
     private static Wait<WebDriver> wait;
 
@@ -34,7 +34,7 @@ public class WebDriverHelpers extends SharedDriver{
     }
     
     public static WebDriver current() {
-        return WEB_DRIVER;
+        return Driver;
     }
 
     /*
