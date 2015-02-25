@@ -10,7 +10,7 @@ Feature: Simple log to email site page
 #
 #  Examples:
 #    |mail|Account|username|password|State|
-#    |Hotmail  |valid  |adebakre@hotmail.com|simisade81|logged in|
+#    |Hotmail  |valid  |adebakre@hotmail.com|passwprd|logged in|
 #    |Gmail    |valid  |adebakre@gmail.com  | p@55w0rd1  |logged in|
 
   @yomi
